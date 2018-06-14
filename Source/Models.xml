@@ -126,10 +126,12 @@
       </Object>
       <Object id="16" name="Cost">
         <PropertyList model="FIELD">
-          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
           <Picture id="157" valUnicode="10.2"/>
-          <Size id="174" val="10"/>
-          <_Flip id="194"/>
+          <_Dec id="181" val="2"/>
+          <_Whole id="182" val="10"/>
+          <_Negative id="192"/>
+          <_FieldStyle id="276" val="1"/>
         </PropertyList>
       </Object>
       <Object id="17" name="CustomerID">

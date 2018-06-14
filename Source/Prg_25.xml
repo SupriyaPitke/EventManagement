@@ -19,7 +19,10 @@
           <SQL val="N"/>
           <ReturnValue>
             <ReturnValueAttr/>
-            <ParametersAttributes/>
+            <TSK_PARAMS val="1"/>
+            <ParametersAttributes>
+              <Attr MgAttr="A"/>
+            </ParametersAttributes>
           </ReturnValue>
           <SqlWhereExist val="N"/>
           <TaskType val="C"/>
@@ -28,9 +31,9 @@
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736859" _time="62780" date="14/06/2018" time="17:26:20"/>
+          <LastModified _date="736859" _time="65591" date="14/06/2018" time="18:13:11"/>
         </Header>
-        <ItemIsn val="8"/>
+        <ItemIsn val="9"/>
         <Resource>
           <DB id="1">
             <DataObject comp="-1" obj="4"/>
@@ -40,7 +43,17 @@
             <Cache val="Y"/>
             <IdentifyRowModifications val="84"/>
           </DB>
-          <Columns/>
+          <Columns>
+            <Column id="1" name="piOeration">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="10"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="10"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+          </Columns>
         </Resource>
         <Information>
           <Key>
@@ -54,7 +67,7 @@
           <ForceRecordDelete DEL="N"/>
           <EndTaskCondition val="N"/>
           <EvaluateEndCondition val="B"/>
-          <InitialMode val="M"/>
+          <InitialMode Exp="4"/>
           <Locate Direction="A"/>
           <Range Direction="A"/>
           <VarRange/>
@@ -75,9 +88,9 @@
           <SIDE_WIN>
             <AllowOptions val="Y"/>
             <AllowQuery val="Y"/>
-            <AllowModify val="Y"/>
-            <AllowCreate val="Y"/>
-            <AllowDelete val="Y"/>
+            <AllowModify Exp="6"/>
+            <AllowCreate Exp="5"/>
+            <AllowDelete val="N"/>
             <AllowLocate val="Y"/>
             <AllowRange val="Y"/>
             <AllowIndexChange val="Y"/>
@@ -225,6 +238,43 @@
                   <Modifier val="S"/>
                   <Direction val="C"/>
                 </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="9" FlowIsn="12" id="9">
+                  <Column val="1"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="3" propagate="78">
+            <Level val="C"/>
+            <Type val="V"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <TXT val="SupplierID"/>
+            <Expanded val="1"/>
+            <ExecuteOn_ val="O"/>
+            <LogicLines>
+              <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="2" FlowIsn="11" IMG_DEF_CHG="N" Image="C" Mode="E" TTL_DEF_CHG="N" TitleTxt="Error" VR_DISP="B">
+                  <AppendToErrorLog val="Y"/>
+                  <Condition Exp="3"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
               </LogicLine>
             </LogicLines>
           </LogicUnit>
@@ -440,7 +490,6 @@
             <Control PDOD="128" _test_id="19" id="19">
               <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
                 <Model comp="-1" id="1" obj="22"/>
-                <X id="21" val="5"/>
                 <Y id="22" val="254"/>
                 <Width id="23" val="78"/>
                 <Height id="24" val="18"/>
@@ -483,8 +532,28 @@
         </TaskForms>
         <Expressions>
           <Expression id="1">
-            <ExpSyntax val="{0,1}+1"/>
-            <ExpAttribute val="N"/>
+            <ExpSyntax val="'Mandatory Field: '"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="2">
+            <ExpSyntax val="ExpCalc('1'EXP)&amp;'SupplierID.'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="3">
+            <ExpSyntax val="{0,1}=''"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="4">
+            <ExpSyntax val="CASE({0,9},'Create','C'MODE,'Modify','M'MODE,'E'MODE)"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="5">
+            <ExpSyntax val="{0,9}= 'Create'"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="6">
+            <ExpSyntax val="{0,9}='Modify'"/>
+            <ExpAttribute val="B"/>
           </Expression>
         </Expressions>
         <Task MainProgram="N">

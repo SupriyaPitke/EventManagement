@@ -28,10 +28,21 @@
           <RunProjectAs val="O"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736853" _time="37184" date="08/06/2018" time="10:19:44"/>
+          <LastModified _date="736859" _time="36803" date="14/06/2018" time="10:13:23"/>
         </Header>
+        <ItemIsn val="1"/>
         <Resource>
-          <Columns/>
+          <Columns>
+            <Column id="1" name="ImagePath">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="300"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="300"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+          </Columns>
         </Resource>
         <Information>
           <Key>
@@ -102,6 +113,21 @@
               <EventType val="S"/>
               <PublicObject comp="-1"/>
             </Event>
+            <LogicLines>
+              <LogicLine>
+                <Select FieldID="1" FlowIsn="1" id="1">
+                  <ASS val="2"/>
+                  <Column val="1"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+            </LogicLines>
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
@@ -123,6 +149,12 @@
             </PropertyList>
           </FormEntry>
         </TaskForms>
+        <Expressions>
+          <Expression id="2">
+            <ExpSyntax val="Translate('%ImageLocation%')"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+        </Expressions>
       </Task>
     </Programs>
   </ProgramsRepository>

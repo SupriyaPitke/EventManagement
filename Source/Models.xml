@@ -4,7 +4,7 @@
   <Header>
     <Version val="14000.00"/>
     <WithIsn val="Y"/>
-    <LastIsn val="21"/>
+    <LastIsn val="24"/>
     <LastIsnFolder val="0"/>
     <Folders/>
   </Header>
@@ -170,6 +170,21 @@
           <Picture id="157" valUnicode="100"/>
           <Size id="174" val="100"/>
           <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="22" name="Add">
+        <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
+          <Format id="82" valUnicode="&amp;Add"/>
+        </PropertyList>
+      </Object>
+      <Object id="23" name="ModiFy">
+        <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
+          <Format id="82" valUnicode="&amp;Modify"/>
+        </PropertyList>
+      </Object>
+      <Object id="24" name="Delete">
+        <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
+          <Format id="82" valUnicode="&amp;Delete"/>
         </PropertyList>
       </Object>
     </Models>

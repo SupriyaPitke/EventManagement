@@ -29,9 +29,9 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736860" _time="59518" date="15/06/2018" time="16:31:58"/>
+          <LastModified _date="736860" _time="63085" date="15/06/2018" time="17:31:25"/>
         </Header>
-        <ItemIsn val="2"/>
+        <ItemIsn val="4"/>
         <Resource>
           <Columns>
             <Column id="1" name="Supplier">
@@ -49,6 +49,24 @@
                 <Picture id="157" valUnicode="11"/>
                 <StoredAs id="173" val="1"/>
                 <Size id="174" val="11"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="3" name="Route name">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="30"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="30"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="4" name="Outlet name">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="30"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="30"/>
                 <_Flip id="194"/>
               </PropertyList>
             </Column>
@@ -160,7 +178,7 @@
               </LogicLine>
             </LogicLines>
           </LogicUnit>
-          <LogicUnit id="3" propagate="78">
+          <LogicUnit id="3" propagate="89">
             <Level val="H"/>
             <Type val="U"/>
             <Scope val="S"/>
@@ -168,12 +186,37 @@
             <ShowMessage val="Y"/>
             <Condition val="89"/>
             <Event>
-              <EventType val="U"/>
-              <PublicObject comp="-1" obj="1"/>
+              <EventType val="I"/>
+              <InternalEventID val="594"/>
+              <PublicObject comp="-1"/>
             </Event>
             <Expanded val="1"/>
             <ExecuteOn_ val="O"/>
             <LogicLines>
+              <LogicLine>
+                <Select FieldID="3" FlowIsn="7" id="3">
+                  <Column val="3"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="4" FlowIsn="8" id="4">
+                  <Column val="4"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
               <LogicLine>
                 <CallTask FlowIsn="4">
                   <OperationType val="P"/>
@@ -181,11 +224,12 @@
                     <EventType val="U"/>
                     <PublicObject comp="-1"/>
                   </Event>
-                  <TaskID comp="-1" obj="4"/>
+                  <TaskID comp="-1" obj="25"/>
                   <Lock val="N"/>
                   <Wait val="Y"/>
                   <SyncData val="N"/>
                   <IsRoute val="N"/>
+                  <RoutePath val="Supplier"/>
                   <DestSubformName val="Subform2"/>
                   <RetainFocus val="N"/>
                   <Condition val="Y"/>
@@ -216,8 +260,9 @@
                 <Format id="82" valUnicode="Supplier"/>
                 <ButtonStyle id="96" val="3"/>
                 <RaiseEvent id="234">
-                  <EventType val="U"/>
-                  <PublicObject comp="-1" obj="2"/>
+                  <EventType val="I"/>
+                  <InternalEventID val="594"/>
+                  <PublicObject comp="-1"/>
                 </RaiseEvent>
               </PropertyList>
             </Control>
@@ -230,6 +275,9 @@
                 <ControlName id="46" val="Subform2"/>
                 <Arguments id="126"/>
                 <ConnectTo id="156" val="4"/>
+                <AutomaticRefresh id="312"/>
+                <IsRouterOutlet id="707" val="Y"/>
+                <DefaultOutlet id="712" val="Y"/>
               </PropertyList>
             </Control>
             <Control PDOD="128" _test_id="3" id="3">

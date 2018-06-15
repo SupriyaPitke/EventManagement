@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736860" _time="59904" date="15/06/2018" time="16:38:24"/>
+          <LastModified _date="736860" _time="60505" date="15/06/2018" time="16:48:25"/>
         </Header>
         <ItemIsn val="35"/>
         <Resource>
@@ -368,7 +368,7 @@
         </TaskForms>
         <Expressions>
           <Expression id="1">
-            <ExpSyntax val="'Ser'&amp;Trim(Str(Val(Right(Trim({0,33}),7),'#######')+1,'P0#######'))"/>
+            <ExpSyntax val="'SER'&amp;Trim(Str(Val(Right(Trim({0,33}),7),'#######')+1,'P0#######'))"/>
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="4">
@@ -396,7 +396,7 @@
             <TaskType val="W"/>
             <Interactive val="Y"/>
             <External val="N"/>
-            <FormType val="M"/>
+            <FormType val="N"/>
             <DotNetObjectExists val="N"/>
             <LastModified _date="736860" _time="58851" date="15/06/2018" time="16:20:51"/>
           </Header>

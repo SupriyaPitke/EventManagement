@@ -18,6 +18,7 @@
  <DataSourceRepository>
   <DataObjects>
  
+ 
 <DataObject PhysicalName="EventDetail" Resident="N" UniqueISNConvState="12" data_source="SQLite Database" id="2" name="EventDetail">
 
   <Encrypt val="N"/>
@@ -246,32 +247,35 @@
     </Column>
     <Column id="10" name="CostFor4Hrs">
       <PropertyList model="FIELD">
-        <Model attr_obj="FIELD_ALPHA" comp="-1" id="1" obj="16"/>
-        <StoredAs id="173" val="3"/>
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="16"/>
+        <StoredAs id="173" val="6"/>
+        <Size id="174" val="8"/>
         <Definition id="175" val="2"/>
         <DbColumnName id="178" val="CostFor4Hrs"/>
         <_Flip id="194"/>
-        <_FieldPhysical Name="CostFor4Hrs" PIC_U="10.2" Size="10" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldPhysical Name="CostFor4Hrs" PIC_U="10.2" Size="8" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="6" translate="1"/>
       </PropertyList>
     </Column>
     <Column id="11" name="CostFor12Hrs">
       <PropertyList model="FIELD">
-        <Model attr_obj="FIELD_ALPHA" comp="-1" id="1" obj="16"/>
-        <StoredAs id="173" val="3"/>
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="16"/>
+        <StoredAs id="173" val="6"/>
+        <Size id="174" val="8"/>
         <Definition id="175" val="2"/>
         <DbColumnName id="178" val="CostFor12Hrs"/>
         <_Flip id="194"/>
-        <_FieldPhysical Name="CostFor12Hrs" PIC_U="10.2" Size="10" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldPhysical Name="CostFor12Hrs" PIC_U="10.2" Size="8" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="6" translate="1"/>
       </PropertyList>
     </Column>
     <Column id="12" name="CostFor24Hrs">
       <PropertyList model="FIELD">
-        <Model attr_obj="FIELD_ALPHA" comp="-1" id="1" obj="16"/>
-        <StoredAs id="173" val="3"/>
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="16"/>
+        <StoredAs id="173" val="6"/>
+        <Size id="174" val="8"/>
         <Definition id="175" val="2"/>
         <DbColumnName id="178" val="CostFor24Hrs"/>
         <_Flip id="194"/>
-        <_FieldPhysical Name="CostFor24Hrs" PIC_U="10.2" Size="10" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldPhysical Name="CostFor24Hrs" PIC_U="10.2" Size="8" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="6" translate="1"/>
       </PropertyList>
     </Column>
   </Columns>
@@ -536,12 +540,13 @@
     </Column>
     <Column id="3" name="Cost">
       <PropertyList model="FIELD">
-        <Model attr_obj="FIELD_ALPHA" comp="-1" id="1" obj="16"/>
-        <StoredAs id="173" val="3"/>
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="16"/>
+        <StoredAs id="173" val="6"/>
+        <Size id="174" val="8"/>
         <Definition id="175" val="2"/>
         <DbColumnName id="178" val="Cost"/>
         <_Flip id="194"/>
-        <_FieldPhysical Name="Cost" PIC_U="10.2" Size="10" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldPhysical Name="Cost" PIC_U="10.2" Size="8" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="6" translate="1"/>
       </PropertyList>
     </Column>
   </Columns>
@@ -932,12 +937,13 @@
     </Column>
     <Column id="14" name="TotalCost">
       <PropertyList model="FIELD">
-        <Model attr_obj="FIELD_ALPHA" comp="-1" id="1" obj="16"/>
-        <StoredAs id="173" val="3"/>
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="16"/>
+        <StoredAs id="173" val="6"/>
+        <Size id="174" val="8"/>
         <Definition id="175" val="2"/>
         <DbColumnName id="178" val="TotalCost"/>
         <_Flip id="194"/>
-        <_FieldPhysical Name="TotalCost" PIC_U="10.2" Size="10" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldPhysical Name="TotalCost" PIC_U="10.2" Size="8" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="6" translate="1"/>
       </PropertyList>
     </Column>
     <Column id="15" name="Rating">
@@ -1039,12 +1045,13 @@
     </Column>
     <Column id="4" name="Charges">
       <PropertyList model="FIELD">
-        <Model attr_obj="FIELD_ALPHA" comp="-1" id="1" obj="16"/>
-        <StoredAs id="173" val="3"/>
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="16"/>
+        <StoredAs id="173" val="6"/>
+        <Size id="174" val="8"/>
         <Definition id="175" val="2"/>
         <DbColumnName id="178" val="Charges"/>
         <_Flip id="194"/>
-        <_FieldPhysical Name="Charges" PIC_U="10.2" Size="10" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldPhysical Name="Charges" PIC_U="10.2" Size="8" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="6" translate="1"/>
       </PropertyList>
     </Column>
     <Column id="5" name="Rating">
@@ -1234,12 +1241,13 @@
     </Column>
     <Column id="3" name="Charges">
       <PropertyList model="FIELD">
-        <Model attr_obj="FIELD_ALPHA" comp="-1" id="1" obj="16"/>
-        <StoredAs id="173" val="3"/>
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="16"/>
+        <StoredAs id="173" val="6"/>
+        <Size id="174" val="8"/>
         <Definition id="175" val="2"/>
         <DbColumnName id="178" val="Charges"/>
         <_Flip id="194"/>
-        <_FieldPhysical Name="Charges" PIC_U="10.2" Size="10" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldPhysical Name="Charges" PIC_U="10.2" Size="8" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="6" translate="1"/>
       </PropertyList>
     </Column>
   </Columns>

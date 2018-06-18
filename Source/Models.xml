@@ -4,7 +4,7 @@
   <Header>
     <Version val="14000.00"/>
     <WithIsn val="Y"/>
-    <LastIsn val="24"/>
+    <LastIsn val="27"/>
     <LastIsnFolder val="0"/>
     <Folders/>
   </Header>
@@ -187,6 +187,21 @@
       <Object id="24" name="Delete">
         <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
           <Format id="82" valUnicode="&amp;Delete"/>
+        </PropertyList>
+      </Object>
+      <Object id="25" name="Add">
+        <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+          <Format id="82" valUnicode="Add"/>
+        </PropertyList>
+      </Object>
+      <Object id="26" name="Modify">
+        <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+          <Format id="82" valUnicode="Modify"/>
+        </PropertyList>
+      </Object>
+      <Object id="27" name="Delete">
+        <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+          <Format id="82" valUnicode="Modify"/>
         </PropertyList>
       </Object>
     </Models>

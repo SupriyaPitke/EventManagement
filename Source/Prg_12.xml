@@ -30,7 +30,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736863" _time="64284" date="18/06/2018" time="17:51:24"/>
+          <LastModified _date="736864" _time="59101" date="19/06/2018" time="16:25:01"/>
         </Header>
         <ItemIsn val="35"/>
         <Resource>
@@ -314,12 +314,13 @@
             </Control>
             <Control PDOD="128" _test_id="6" id="6">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                <Model comp="-1" id="1" obj="25"/>
                 <X id="21" val="44"/>
                 <Y id="22" val="490"/>
                 <Width id="23" val="61"/>
                 <Height id="24" val="23"/>
                 <ControlName id="46" val="Add"/>
-                <Format id="82" valUnicode="Add"/>
+                <Format id="82" valUnicode="&amp;Add"/>
                 <RaiseEvent id="234">
                   <EventType val="I"/>
                   <InternalEventID val="37"/>
@@ -329,12 +330,13 @@
             </Control>
             <Control PDOD="128" _test_id="7" id="7">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                <Model comp="-1" id="1" obj="26"/>
                 <X id="21" val="111"/>
                 <Y id="22" val="490"/>
                 <Width id="23" val="61"/>
                 <Height id="24" val="23"/>
                 <ControlName id="46" val="Modify"/>
-                <Format id="82" valUnicode="Modify"/>
+                <Format id="82" valUnicode="&amp;Modify"/>
                 <RaiseEvent id="234">
                   <EventType val="I"/>
                   <InternalEventID val="30"/>
@@ -344,12 +346,13 @@
             </Control>
             <Control PDOD="128" _test_id="8" id="8">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                <Model comp="-1" id="1" obj="27"/>
                 <X id="21" val="179"/>
                 <Y id="22" val="490"/>
                 <Width id="23" val="61"/>
                 <Height id="24" val="23"/>
                 <ControlName id="46" val="Delete"/>
-                <Format id="82" valUnicode="Delete"/>
+                <Format id="82" valUnicode="&amp;Delete"/>
                 <RaiseEvent id="234">
                   <EventType val="I"/>
                   <InternalEventID val="36"/>

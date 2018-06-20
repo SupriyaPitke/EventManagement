@@ -13,7 +13,7 @@
   <ProgramsRepository>
     <Programs>
       <Task MainProgram="N">
-        <Header Description="Select Venue" ISN_2="1" LastIsn="1" id="47">
+        <Header Description="SelectVenue" ISN_2="1" LastIsn="1" id="47">
           <Public val="Select Venue"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -32,7 +32,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736865" _time="34852" date="20/06/2018" time="09:40:52"/>
+          <LastModified _date="736865" _time="36565" date="20/06/2018" time="10:09:25"/>
         </Header>
         <ItemIsn val="3"/>
         <Resource>
@@ -211,7 +211,7 @@
               <FormUnits id="33" val="4"/>
               <_Comment id="218"/>
               <StartupPosition id="275" val="7"/>
-              <FormName id="311" valUnicode="Select_Venue"/>
+              <FormName id="311" valUnicode="SelectVenue"/>
             </PropertyList>
             <Control _test_id="1" id="1">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">

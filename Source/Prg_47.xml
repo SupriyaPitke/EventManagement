@@ -32,7 +32,7 @@
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736865" _time="37361" date="20/06/2018" time="10:22:41"/>
+          <LastModified _date="736865" _time="43374" date="20/06/2018" time="12:02:54"/>
         </Header>
         <ItemIsn val="3"/>
         <Resource>
@@ -153,7 +153,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="3"/>
+                  <_DitIndexForToolkit val="5"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -166,7 +166,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="4"/>
+                  <_DitIndexForToolkit val="6"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -206,7 +206,7 @@
         <TaskForms>
           <FormEntry _last_isn="8" _last_test_id="8" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
-              <Width id="23" val="348"/>
+              <Width id="23" val="441"/>
               <Height id="24" val="452"/>
               <FormUnits id="33" val="4"/>
               <_Comment id="218"/>
@@ -219,8 +219,8 @@
                 <Text id="19" valUnicode="Select one of the Venue from the list"/>
                 <X id="21" val="29"/>
                 <Y id="22" val="15"/>
-                <Width id="23" val="305"/>
-                <Height id="24" val="26"/>
+                <Width id="23" val="173"/>
+                <Height id="24" val="15"/>
                 <ControlName id="46" val="Label1"/>
               </PropertyList>
             </Control>
@@ -236,6 +236,24 @@
                 <RowHeight id="80" val="24"/>
                 <Elements id="81" val="2"/>
                 <_WindowWidth id="241" val="291"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="2" PDOD="128" _test_id="3" id="3">
+              <PropertyList model="CTRL_WEB_CLIENT_COLUMN">
+                <Width id="23" val="85"/>
+                <ControlLayer id="25" val="1"/>
+                <ControlName id="46" val="Column3"/>
+                <Sortable id="134" val="Y"/>
+                <ColumnTitle id="139" valUnicode="VenueID"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="2" PDOD="128" _test_id="4" id="4">
+              <PropertyList model="CTRL_WEB_CLIENT_COLUMN">
+                <Width id="23" val="184"/>
+                <ControlLayer id="25" val="2"/>
+                <ControlName id="46" val="Column4"/>
+                <Sortable id="134" val="Y"/>
+                <ColumnTitle id="139" valUnicode="VenueName"/>
               </PropertyList>
             </Control>
             <Control ISN_FATHER="2" _test_id="5" id="5">
@@ -268,24 +286,6 @@
                 <ControlName id="46" val="VenueName"/>
                 <TabOrder id="314" val="2"/>
                 <Border id="452"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="2" PDOD="128" _test_id="3" id="3">
-              <PropertyList model="CTRL_WEB_CLIENT_COLUMN">
-                <Width id="23" val="85"/>
-                <ControlLayer id="25" val="1"/>
-                <ControlName id="46" val="Column3"/>
-                <Sortable id="134" val="Y"/>
-                <ColumnTitle id="139" valUnicode="VenueID"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="2" PDOD="128" _test_id="4" id="4">
-              <PropertyList model="CTRL_WEB_CLIENT_COLUMN">
-                <Width id="23" val="184"/>
-                <ControlLayer id="25" val="2"/>
-                <ControlName id="46" val="Column4"/>
-                <Sortable id="134" val="Y"/>
-                <ColumnTitle id="139" valUnicode="VenueName"/>
               </PropertyList>
             </Control>
             <Control PDOD="128" _test_id="7" id="7">

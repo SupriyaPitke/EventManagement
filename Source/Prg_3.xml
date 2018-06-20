@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736863" _time="62869" date="18/06/2018" time="17:27:49"/>
+          <LastModified _date="736864" _time="67296" date="19/06/2018" time="18:41:36"/>
         </Header>
         <ItemIsn val="8"/>
         <Resource>
@@ -205,7 +205,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="3"/>
+                  <_DitIndexForToolkit val="2"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -218,7 +218,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="4"/>
+                  <_DitIndexForToolkit val="3"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -231,7 +231,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="5"/>
+                  <_DitIndexForToolkit val="4"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -244,7 +244,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="6"/>
+                  <_DitIndexForToolkit val="5"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -257,7 +257,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="7"/>
+                  <_DitIndexForToolkit val="6"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -306,7 +306,7 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <CallTask FlowIsn="4">
+                <CallTask FlowIsn="25">
                   <OperationType val="P"/>
                   <Event>
                     <EventType val="U"/>
@@ -316,8 +316,45 @@
                   <Lock val="N"/>
                   <Wait val="Y"/>
                   <SyncData val="N"/>
-                  <IsRoute val="N"/>
-                  <RoutePath val="Supplier"/>
+                  <IsRoute val="Y"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="23">
+                  <OperationType val="P"/>
+                  <Event>
+                    <EventType val="U"/>
+                    <PublicObject comp="-1"/>
+                  </Event>
+                  <TaskID comp="-1" obj="12"/>
+                  <Lock val="N"/>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <IsRoute val="Y"/>
+                  <DestSubformName val="Subform2"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="24">
+                  <OperationType val="P"/>
+                  <Event>
+                    <EventType val="U"/>
+                    <PublicObject comp="-1"/>
+                  </Event>
+                  <TaskID comp="-1" obj="68"/>
+                  <Lock val="N"/>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <IsRoute val="Y"/>
+                  <DestSubformName val="Subform2"/>
                   <RetainFocus val="N"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -328,10 +365,10 @@
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="7" _last_test_id="7" id="1">
+          <FormEntry _last_isn="8" _last_test_id="8" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
-              <Width id="23" val="869"/>
-              <Height id="24" val="597"/>
+              <Width id="23" val="1249"/>
+              <Height id="24" val="800"/>
               <FormUnits id="33" val="4"/>
               <_Comment id="218"/>
               <FormName id="311" valUnicode="MainProg"/>
@@ -364,33 +401,32 @@
                 </RaiseEvent>
               </PropertyList>
             </Control>
-            <Control PDOD="128" _test_id="2" id="2">
-              <PropertyList model="CTRL_WEB_CLIENT_SUBFORM">
-                <X id="21" val="170"/>
-                <Y id="22" val="19"/>
-                <Width id="23" val="676"/>
-                <Height id="24" val="554"/>
-                <ControlName id="46" val="Subform2"/>
-                <Arguments id="126"/>
-                <ConnectTo id="156" val="4"/>
-                <AutomaticRefresh id="312"/>
-                <IsRouterOutlet id="707" val="Y"/>
-                <DefaultOutlet id="712"/>
-              </PropertyList>
-            </Control>
             <Control PDOD="128" _test_id="3" id="3">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
                 <X id="21" val="51"/>
-                <Y id="22" val="56"/>
+                <Y id="22" val="53"/>
                 <Width id="23" val="71"/>
                 <Height id="24" val="22"/>
                 <Data FieldID="2" id="43"/>
                 <ControlName id="46" val="Button3"/>
                 <Format id="82" valUnicode="Service"/>
                 <ButtonStyle id="96" val="3"/>
+                <Arguments id="126">
+                  <Arguments>
+                    <Argument>
+                      <Expression val="3"/>
+                      <Skip val="N"/>
+                    </Argument>
+                    <Argument>
+                      <Expression val="2"/>
+                      <Skip val="N"/>
+                    </Argument>
+                  </Arguments>
+                </Arguments>
                 <RaiseEvent id="234">
-                  <EventType val="U"/>
-                  <PublicObject comp="-1" obj="1"/>
+                  <EventType val="I"/>
+                  <InternalEventID val="594"/>
+                  <PublicObject comp="-1"/>
                 </RaiseEvent>
               </PropertyList>
             </Control>
@@ -404,6 +440,23 @@
                 <ControlName id="46" val="Button4"/>
                 <Format id="82" valUnicode="EventDetails"/>
                 <ButtonStyle id="96" val="3"/>
+                <Arguments id="126">
+                  <Arguments>
+                    <Argument>
+                      <Expression val="4"/>
+                      <Skip val="N"/>
+                    </Argument>
+                    <Argument>
+                      <Expression val="2"/>
+                      <Skip val="N"/>
+                    </Argument>
+                  </Arguments>
+                </Arguments>
+                <RaiseEvent id="234">
+                  <EventType val="I"/>
+                  <InternalEventID val="594"/>
+                  <PublicObject comp="-1"/>
+                </RaiseEvent>
               </PropertyList>
             </Control>
             <Control PDOD="128" _test_id="5" id="5">
@@ -416,6 +469,23 @@
                 <ControlName id="46" val="Button5"/>
                 <Format id="82" valUnicode="Customer"/>
                 <ButtonStyle id="96" val="3"/>
+                <Arguments id="126">
+                  <Arguments>
+                    <Argument>
+                      <Expression val="5"/>
+                      <Skip val="N"/>
+                    </Argument>
+                    <Argument>
+                      <Expression val="2"/>
+                      <Skip val="N"/>
+                    </Argument>
+                  </Arguments>
+                </Arguments>
+                <RaiseEvent id="234">
+                  <EventType val="I"/>
+                  <InternalEventID val="594"/>
+                  <PublicObject comp="-1"/>
+                </RaiseEvent>
               </PropertyList>
             </Control>
             <Control PDOD="128" _test_id="6" id="6">
@@ -442,6 +512,34 @@
                 <ButtonStyle id="96" val="3"/>
               </PropertyList>
             </Control>
+            <Control PDOD="128" _test_id="8" id="8">
+              <PropertyList model="CTRL_WEB_CLIENT_SUBFORM">
+                <X id="21" val="44"/>
+                <Y id="22" val="388"/>
+                <Width id="23" val="380"/>
+                <Height id="24" val="150"/>
+                <ControlName id="46" val="DefaultOutlet"/>
+                <Arguments id="126"/>
+                <ConnectTo id="156" val="4"/>
+                <AutomaticRefresh id="312"/>
+                <IsRouterOutlet id="707" val="Y"/>
+                <DefaultOutlet id="712" val="Y"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="128" _test_id="2" id="2">
+              <PropertyList model="CTRL_WEB_CLIENT_SUBFORM">
+                <X id="21" val="44"/>
+                <Y id="22" val="583"/>
+                <Width id="23" val="376"/>
+                <Height id="24" val="160"/>
+                <ControlName id="46" val="Subform2"/>
+                <Arguments id="126"/>
+                <ConnectTo id="156" val="4"/>
+                <AutomaticRefresh id="312"/>
+                <IsRouterOutlet id="707" val="Y"/>
+                <DefaultOutlet id="712"/>
+              </PropertyList>
+            </Control>
           </FormEntry>
         </TaskForms>
         <Expressions>
@@ -451,6 +549,18 @@
           </Expression>
           <Expression id="2">
             <ExpSyntax val="'Subform2'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="3">
+            <ExpSyntax val="'ServiceHeader'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="4">
+            <ExpSyntax val="'EventDetails'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="5">
+            <ExpSyntax val="'Custmer'"/>
             <ExpAttribute val="A"/>
           </Expression>
         </Expressions>

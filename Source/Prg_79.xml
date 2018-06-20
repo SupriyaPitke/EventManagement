@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736864" _time="62123" date="19/06/2018" time="17:15:23"/>
+          <LastModified _date="736864" _time="68270" date="19/06/2018" time="18:57:50"/>
         </Header>
         <ItemIsn val="16"/>
         <Resource>
@@ -550,7 +550,7 @@
                 <Width id="23" val="51"/>
                 <Height id="24" val="36"/>
                 <ControlName id="46" val="Add"/>
-                <Format id="82" valUnicode="&amp;Add"/>
+                <Format id="82" valUnicode="Add"/>
                 <RaiseEvent id="234">
                   <EventType val="I"/>
                   <InternalEventID val="37"/>
@@ -566,7 +566,7 @@
                 <Width id="23" val="51"/>
                 <Height id="24" val="36"/>
                 <ControlName id="46" val="Modify"/>
-                <Format id="82" valUnicode="&amp;Modify"/>
+                <Format id="82" valUnicode="Modify"/>
                 <RaiseEvent id="234">
                   <EventType val="I"/>
                   <InternalEventID val="30"/>
@@ -583,7 +583,7 @@
                 <Width id="23" val="51"/>
                 <Height id="24" val="36"/>
                 <ControlName id="46" val="Delete"/>
-                <Format id="82" valUnicode="&amp;Delete"/>
+                <Format id="82" valUnicode="Delete"/>
                 <RaiseEvent id="234">
                   <EventType val="I"/>
                   <InternalEventID val="36"/>

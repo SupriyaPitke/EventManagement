@@ -30,9 +30,9 @@
           <Interactive val="Y"/>
           <External val="Y"/>
           <Offline val="N"/>
-          <FormType val="N"/>
+          <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736865" _time="36565" date="20/06/2018" time="10:09:25"/>
+          <LastModified _date="736865" _time="37361" date="20/06/2018" time="10:22:41"/>
         </Header>
         <ItemIsn val="3"/>
         <Resource>
@@ -212,6 +212,7 @@
               <_Comment id="218"/>
               <StartupPosition id="275" val="7"/>
               <FormName id="311" valUnicode="SelectVenue"/>
+              <WindowType id="358" val="12"/>
             </PropertyList>
             <Control _test_id="1" id="1">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">

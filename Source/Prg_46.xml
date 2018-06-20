@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736865" _time="63219" date="20/06/2018" time="17:33:39"/>
+          <LastModified _date="736865" _time="66903" date="20/06/2018" time="18:35:03"/>
         </Header>
         <ItemIsn val="18"/>
         <Resource>
@@ -889,6 +889,11 @@
                 <Height id="24" val="29"/>
                 <ControlName id="46" val="Button35"/>
                 <Format id="82" valUnicode="Add Booking"/>
+                <RaiseEvent id="234">
+                  <EventType val="I"/>
+                  <InternalEventID val="14"/>
+                  <PublicObject comp="-1"/>
+                </RaiseEvent>
               </PropertyList>
             </Control>
             <Control PDOD="128" _test_id="36" id="36">
@@ -901,7 +906,7 @@
                 <Format id="82" valUnicode="Cancel Booking"/>
                 <RaiseEvent id="234">
                   <EventType val="I"/>
-                  <InternalEventID val="33"/>
+                  <InternalEventID val="393"/>
                   <PublicObject comp="-1"/>
                 </RaiseEvent>
               </PropertyList>

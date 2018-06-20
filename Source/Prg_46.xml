@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736865" _time="39332" date="20/06/2018" time="10:55:32"/>
+          <LastModified _date="736865" _time="56205" date="20/06/2018" time="15:36:45"/>
         </Header>
         <ItemIsn val="18"/>
         <Resource>
@@ -369,7 +369,7 @@
           <LogicUnit id="3" propagate="78">
             <Level val="H"/>
             <Type val="U"/>
-            <Scope val="S"/>
+            <Scope val="T"/>
             <EngineDirective val="S"/>
             <ShowMessage val="Y"/>
             <Condition val="89"/>
@@ -384,7 +384,7 @@
                 <CallTask FlowIsn="18">
                   <OperationType val="P"/>
                   <Event>
-                    <EventType val="U"/>
+                    <EventType val="N"/>
                     <PublicObject comp="-1"/>
                   </Event>
                   <TaskID comp="-1" obj="47"/>
@@ -392,6 +392,46 @@
                   <Arguments>
                     <Argument>
                       <Variable val="8"/>
+                      <Skip val="N"/>
+                    </Argument>
+                  </Arguments>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <IsRoute val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="4" propagate="78">
+            <Level val="H"/>
+            <Type val="U"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="U"/>
+              <PublicObject comp="-1" obj="3"/>
+            </Event>
+            <Expanded val="1"/>
+            <ExecuteOn_ val="O"/>
+            <LogicLines>
+              <LogicLine>
+                <CallTask FlowIsn="25">
+                  <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                    <PublicObject comp="-1"/>
+                  </Event>
+                  <TaskID comp="-1" obj="48"/>
+                  <Lock val="N"/>
+                  <Arguments>
+                    <Argument>
+                      <Variable val="7"/>
                       <Skip val="N"/>
                     </Argument>
                   </Arguments>
@@ -492,7 +532,7 @@
                 <Text id="19" valUnicode="Enquiry  Date"/>
                 <X id="21" val="356"/>
                 <Y id="22" val="114"/>
-                <Width id="23" val="62"/>
+                <Width id="23" val="67"/>
                 <Height id="24" val="15"/>
                 <ControlName id="46" val="Label6"/>
               </PropertyList>
@@ -527,7 +567,7 @@
                 <Y id="22" val="148"/>
                 <Width id="23" val="23"/>
                 <Height id="24" val="20"/>
-                <ControlName id="46" val="Button33"/>
+                <ControlName id="46" val="VenueB"/>
                 <Format id="82" valUnicode="..."/>
                 <RaiseEvent id="234">
                   <EventType val="U"/>
@@ -540,7 +580,7 @@
                 <Model ID="MODEL_RICH_CLIENT" id="1">
                   <Var FieldID="8"/>
                 </Model>
-                <X id="21" val="123"/>
+                <X id="21" val="126"/>
                 <Y id="22" val="150"/>
                 <Width id="23" val="76"/>
                 <Height id="24" val="20"/>
@@ -601,8 +641,12 @@
                 <Y id="22" val="190"/>
                 <Width id="23" val="23"/>
                 <Height id="24" val="20"/>
-                <ControlName id="46" val="Button34"/>
+                <ControlName id="46" val="EventB"/>
                 <Format id="82" valUnicode="..."/>
+                <RaiseEvent id="234">
+                  <EventType val="U"/>
+                  <PublicObject comp="-1" obj="3"/>
+                </RaiseEvent>
               </PropertyList>
             </Control>
             <Control PDOD="128" _test_id="14" id="14">
@@ -854,6 +898,12 @@
           </Expression>
         </Expressions>
         <EVNT DESC="Select Venue" FORCE_EXIT="N" id="2">
+          <Event>
+            <EventType val="N"/>
+            <PublicObject comp="-1"/>
+          </Event>
+        </EVNT>
+        <EVNT DESC="Select Event" FORCE_EXIT="N" id="3">
           <Event>
             <EventType val="N"/>
             <PublicObject comp="-1"/>

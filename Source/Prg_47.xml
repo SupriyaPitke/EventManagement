@@ -26,13 +26,13 @@
             </ParametersAttributes>
           </ReturnValue>
           <SqlWhereExist val="N"/>
-          <TaskType val="C"/>
+          <TaskType val="W"/>
           <Interactive val="Y"/>
           <External val="Y"/>
           <Offline val="N"/>
-          <FormType val="M"/>
+          <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736864" _time="68021" date="19/06/2018" time="18:53:41"/>
+          <LastModified _date="736865" _time="34852" date="20/06/2018" time="09:40:52"/>
         </Header>
         <ItemIsn val="3"/>
         <Resource>
@@ -97,7 +97,7 @@
             <AllowIndexChange val="Y"/>
             <AllowSorting val="Y"/>
             <AllowIOFiles val="N"/>
-            <TabbingCycle val="R"/>
+            <RecordCycle val="Y"/>
             <AllowEvents val="Y"/>
             <AllowIndexOptimization val="Y"/>
             <AllowLocationInQuery val="N"/>
@@ -153,7 +153,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="5"/>
+                  <_DitIndexForToolkit val="3"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -166,7 +166,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="6"/>
+                  <_DitIndexForToolkit val="4"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -205,99 +205,95 @@
         </TaskLogic>
         <TaskForms>
           <FormEntry _last_isn="8" _last_test_id="8" id="1">
-            <PropertyList model="FORM_RICH_CLIENT">
-              <Width id="23" val="278"/>
-              <Height id="24" val="278"/>
+            <PropertyList model="FORM_WEB_CLIENT">
+              <Width id="23" val="348"/>
+              <Height id="24" val="452"/>
+              <FormUnits id="33" val="4"/>
               <_Comment id="218"/>
               <StartupPosition id="275" val="7"/>
-              <FormName id="311" valUnicode="Select Venue"/>
+              <FormName id="311" valUnicode="Select_Venue"/>
             </PropertyList>
-            <Control _test_id="8" id="8">
-              <PropertyList model="CTRL_RICH_CLIENT_LABEL">
-                <Text id="19" valUnicode="Select one of the Venue from the list"/>
-                <X id="21" val="23"/>
-                <Y id="22" val="9"/>
-                <Width id="23" val="244"/>
-                <Height id="24" val="16"/>
-                <Font id="50" val="5"/>
-                <_Orientation id="143"/>
-              </PropertyList>
-            </Control>
             <Control _test_id="1" id="1">
-              <PropertyList model="CTRL_RICH_CLIENT_TABLE">
-                <Placement bottom="100" id="20" right="100"/>
-                <X id="21" val="24"/>
-                <Y id="22" val="40"/>
-                <Width id="23" val="233"/>
-                <Height id="24" val="182"/>
+              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
+                <Text id="19" valUnicode="Select one of the Venue from the list"/>
+                <X id="21" val="29"/>
+                <Y id="22" val="15"/>
+                <Width id="23" val="305"/>
+                <Height id="24" val="26"/>
+                <ControlName id="46" val="Label1"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="2" id="2">
+              <PropertyList model="CTRL_WEB_CLIENT_TABLE">
+                <X id="21" val="30"/>
+                <Y id="22" val="65"/>
+                <Width id="23" val="291"/>
+                <Height id="24" val="296"/>
+                <ControlName id="46" val="Table2"/>
                 <LineDivider id="78" val="Y"/>
-                <_TitleHeight id="79" val="12"/>
-                <RowHeight id="80" val="15"/>
+                <TitleHeight id="79" val="20"/>
+                <RowHeight id="80" val="24"/>
                 <Elements id="81" val="2"/>
-                <ColumnDivider id="189" val="Y"/>
-                <_WindowWidth id="241" val="233"/>
+                <_WindowWidth id="241" val="291"/>
               </PropertyList>
             </Control>
-            <Control ISN_FATHER="1" PDOD="128" _test_id="4" id="4">
-              <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
-                <Width id="23" val="68"/>
-                <ControlLayer id="25" val="1"/>
-                <_Sortable id="134" val="Y"/>
-                <ColumnTitle id="139" valUnicode="VenueID"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="1" PDOD="128" _test_id="5" id="5">
-              <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
-                <Width id="23" val="147"/>
-                <ControlLayer id="25" val="2"/>
-                <_Sortable id="134" val="Y"/>
-                <ColumnTitle id="139" valUnicode="VenueName"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="1" _test_id="2" id="2">
-              <PropertyList model="CTRL_RICH_CLIENT_EDIT">
+            <Control ISN_FATHER="2" _test_id="5" id="5">
+              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
                 <Model ID="MODEL_RICH_CLIENT_TBL" id="1">
                   <Var FieldID="1"/>
                 </Model>
-                <Placement bottom="100" id="20" right="100"/>
-                <X id="21" val="28"/>
-                <Y id="22" val="55"/>
-                <Width id="23" val="61"/>
-                <Height id="24" val="12"/>
+                <X id="21" val="35"/>
+                <Y id="22" val="89"/>
+                <Width id="23" val="76"/>
+                <Height id="24" val="20"/>
                 <ControlLayer id="25" val="1"/>
                 <Data FieldID="1" id="43"/>
                 <ControlName id="46" val="VenueID"/>
-                <_Style id="63" val="1"/>
                 <TabOrder id="314" val="1"/>
                 <Border id="452"/>
-                <CornerRadius id="668"/>
               </PropertyList>
             </Control>
-            <Control ISN_FATHER="1" _test_id="3" id="3">
-              <PropertyList model="CTRL_RICH_CLIENT_EDIT">
+            <Control ISN_FATHER="2" _test_id="6" id="6">
+              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
                 <Model ID="MODEL_RICH_CLIENT_TBL" id="1">
                   <Var FieldID="2"/>
                 </Model>
-                <Placement bottom="100" id="20" right="100"/>
-                <X id="21" val="96"/>
-                <Y id="22" val="55"/>
-                <Width id="23" val="214"/>
-                <Height id="24" val="12"/>
+                <X id="21" val="120"/>
+                <Y id="22" val="89"/>
+                <Width id="23" val="268"/>
+                <Height id="24" val="20"/>
                 <ControlLayer id="25" val="2"/>
                 <Data FieldID="2" id="43"/>
                 <ControlName id="46" val="VenueName"/>
-                <_Style id="63" val="1"/>
                 <TabOrder id="314" val="2"/>
                 <Border id="452"/>
-                <CornerRadius id="668"/>
               </PropertyList>
             </Control>
-            <Control PDOD="128" _test_id="6" id="6">
-              <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
-                <X id="21" val="50"/>
-                <Y id="22" val="244"/>
-                <Width id="23" val="58"/>
-                <Height id="24" val="17"/>
+            <Control ISN_FATHER="2" PDOD="128" _test_id="3" id="3">
+              <PropertyList model="CTRL_WEB_CLIENT_COLUMN">
+                <Width id="23" val="85"/>
+                <ControlLayer id="25" val="1"/>
+                <ControlName id="46" val="Column3"/>
+                <Sortable id="134" val="Y"/>
+                <ColumnTitle id="139" valUnicode="VenueID"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="2" PDOD="128" _test_id="4" id="4">
+              <PropertyList model="CTRL_WEB_CLIENT_COLUMN">
+                <Width id="23" val="184"/>
+                <ControlLayer id="25" val="2"/>
+                <ControlName id="46" val="Column4"/>
+                <Sortable id="134" val="Y"/>
+                <ColumnTitle id="139" valUnicode="VenueName"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="128" _test_id="7" id="7">
+              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                <X id="21" val="62"/>
+                <Y id="22" val="397"/>
+                <Width id="23" val="73"/>
+                <Height id="24" val="28"/>
+                <ControlName id="46" val="Button7"/>
                 <Format id="82" valUnicode="Select"/>
                 <RaiseEvent id="234">
                   <EventType val="I"/>
@@ -307,12 +303,13 @@
                 <TabOrder id="314" val="3"/>
               </PropertyList>
             </Control>
-            <Control PDOD="128" _test_id="7" id="7">
-              <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
-                <X id="21" val="171"/>
-                <Y id="22" val="244"/>
-                <Width id="23" val="58"/>
-                <Height id="24" val="17"/>
+            <Control PDOD="128" _test_id="8" id="8">
+              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                <X id="21" val="214"/>
+                <Y id="22" val="397"/>
+                <Width id="23" val="73"/>
+                <Height id="24" val="28"/>
+                <ControlName id="46" val="Button8"/>
                 <Format id="82" valUnicode="Cancel"/>
                 <RaiseEvent id="234">
                   <EventType val="I"/>

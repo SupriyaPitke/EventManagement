@@ -29,9 +29,9 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736865" _time="66903" date="20/06/2018" time="18:35:03"/>
+          <LastModified _date="736866" _time="51388" date="21/06/2018" time="14:16:28"/>
         </Header>
-        <ItemIsn val="18"/>
+        <ItemIsn val="19"/>
         <Resource>
           <DB id="2">
             <DataObject comp="-1" obj="3"/>
@@ -49,7 +49,17 @@
             <Cache val="Y"/>
             <IdentifyRowModifications val="84"/>
           </DB>
-          <Columns/>
+          <Columns>
+            <Column id="1" name="A">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="10"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="10"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+          </Columns>
         </Resource>
         <Information>
           <Key>
@@ -333,7 +343,20 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <LNK Direction="A" EVL_CND="R" FlowIsn="19" Mode="R" SortType="20" VIEW="16" VIEWS="2">
+                <Select FieldID="19" FlowIsn="26" id="19">
+                  <Column val="1"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="4"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <LNK Direction="A" EVL_CND="R" FlowIsn="19" Mode="R" SortType="20" VIEW="17" VIEWS="2">
                   <DB comp="-1" obj="3"/>
                   <Expanded val="1"/>
                   <Condition val="Y"/>
@@ -500,6 +523,7 @@
                 <Y id="22" val="32"/>
                 <Width id="23" val="23"/>
                 <Height id="24" val="20"/>
+                <Data FieldID="19" id="43"/>
                 <ControlName id="46" val="Button32"/>
                 <Format id="82" valUnicode="..."/>
               </PropertyList>

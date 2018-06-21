@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736864" _time="67296" date="19/06/2018" time="18:41:36"/>
+          <LastModified _date="736866" _time="60399" date="21/06/2018" time="16:46:39"/>
         </Header>
         <ItemIsn val="8"/>
         <Resource>
@@ -375,14 +375,14 @@
             </PropertyList>
             <Control PDOD="128" _test_id="1" id="1">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="51"/>
+                <X id="21" val="44"/>
                 <Y id="22" val="19"/>
-                <Width id="23" val="57"/>
+                <Width id="23" val="84"/>
                 <Height id="24" val="22"/>
                 <Data FieldID="1" id="43"/>
                 <ControlName id="46" val="Supplier"/>
                 <Format id="82" valUnicode="Supplier"/>
-                <ButtonStyle id="96" val="3"/>
+                <ButtonStyle id="96" val="1"/>
                 <Arguments id="126">
                   <Arguments>
                     <Argument>
@@ -403,14 +403,14 @@
             </Control>
             <Control PDOD="128" _test_id="3" id="3">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="51"/>
-                <Y id="22" val="53"/>
-                <Width id="23" val="71"/>
+                <X id="21" val="44"/>
+                <Y id="22" val="60"/>
+                <Width id="23" val="85"/>
                 <Height id="24" val="22"/>
                 <Data FieldID="2" id="43"/>
                 <ControlName id="46" val="Button3"/>
                 <Format id="82" valUnicode="Service"/>
-                <ButtonStyle id="96" val="3"/>
+                <ButtonStyle id="96" val="1"/>
                 <Arguments id="126">
                   <Arguments>
                     <Argument>
@@ -432,14 +432,14 @@
             </Control>
             <Control PDOD="128" _test_id="4" id="4">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="51"/>
-                <Y id="22" val="93"/>
-                <Width id="23" val="78"/>
+                <X id="21" val="44"/>
+                <Y id="22" val="97"/>
+                <Width id="23" val="85"/>
                 <Height id="24" val="20"/>
                 <Data FieldID="5" id="43"/>
                 <ControlName id="46" val="Button4"/>
                 <Format id="82" valUnicode="EventDetails"/>
-                <ButtonStyle id="96" val="3"/>
+                <ButtonStyle id="96" val="1"/>
                 <Arguments id="126">
                   <Arguments>
                     <Argument>
@@ -461,14 +461,14 @@
             </Control>
             <Control PDOD="128" _test_id="5" id="5">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="51"/>
+                <X id="21" val="44"/>
                 <Y id="22" val="132"/>
-                <Width id="23" val="57"/>
+                <Width id="23" val="84"/>
                 <Height id="24" val="22"/>
                 <Data FieldID="6" id="43"/>
                 <ControlName id="46" val="Button5"/>
                 <Format id="82" valUnicode="Customer"/>
-                <ButtonStyle id="96" val="3"/>
+                <ButtonStyle id="96" val="1"/>
                 <Arguments id="126">
                   <Arguments>
                     <Argument>
@@ -497,19 +497,19 @@
                 <Data FieldID="7" id="43"/>
                 <ControlName id="46" val="Button6"/>
                 <Format id="82" valUnicode="EnquiryBooking"/>
-                <ButtonStyle id="96" val="3"/>
+                <ButtonStyle id="96" val="1"/>
               </PropertyList>
             </Control>
             <Control PDOD="128" _test_id="7" id="7">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
                 <X id="21" val="44"/>
                 <Y id="22" val="213"/>
-                <Width id="23" val="78"/>
+                <Width id="23" val="83"/>
                 <Height id="24" val="22"/>
                 <Data FieldID="8" id="43"/>
                 <ControlName id="46" val="Button7"/>
                 <Format id="82" valUnicode="VenuDetails"/>
-                <ButtonStyle id="96" val="3"/>
+                <ButtonStyle id="96" val="1"/>
               </PropertyList>
             </Control>
             <Control PDOD="128" _test_id="8" id="8">

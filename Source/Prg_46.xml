@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736870" _time="60535" date="25/06/2018" time="16:48:55"/>
+          <LastModified _date="736870" _time="61092" date="25/06/2018" time="16:58:12"/>
         </Header>
         <ItemIsn val="19"/>
         <Resource>
@@ -978,7 +978,7 @@
             <External val="N"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="736870" _time="60535" date="25/06/2018" time="16:48:55"/>
+            <LastModified _date="736870" _time="61092" date="25/06/2018" time="16:58:12"/>
           </Header>
           <ItemIsn val="7"/>
           <Resource>
@@ -1087,6 +1087,7 @@
                     <Type val="V"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="Y"/>
+                    <_DitIndexForToolkit val="9"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -1099,7 +1100,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="2"/>
+                    <_DitIndexForToolkit val="10"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -1112,6 +1113,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
+                    <_DitIndexForToolkit val="11"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -1124,7 +1126,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="4"/>
+                    <_DitIndexForToolkit val="12"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -1137,6 +1139,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
+                    <_DitIndexForToolkit val="13"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -1149,6 +1152,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
+                    <_DitIndexForToolkit val="14"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -1161,6 +1165,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
+                    <_DitIndexForToolkit val="15"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -1171,57 +1176,187 @@
             </LogicUnit>
           </TaskLogic>
           <TaskForms>
-            <FormEntry _last_isn="19" _last_test_id="19" id="1">
+            <FormEntry _last_isn="34" _last_test_id="34" id="1">
               <PropertyList model="FORM_WEB_CLIENT">
+                <Model id="1"/>
+                <Width id="23" val="718"/>
+                <Height id="24" val="353"/>
                 <_Comment id="218"/>
                 <FormName id="311" valUnicode="BookingDetail1"/>
               </PropertyList>
-              <Control _test_id="17" id="17">
-                <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                  <Text id="19" valUnicode="Enq_BookingNo"/>
-                  <X id="21" val="31"/>
-                  <Y id="22" val="113"/>
-                  <Width id="23" val="80"/>
-                  <Height id="24" val="15"/>
-                  <ControlName id="46" val="Label17"/>
-                  <Font id="50" val="1"/>
+              <Control _test_id="20" id="20">
+                <PropertyList model="CTRL_WEB_CLIENT_TABLE">
+                  <X id="21" val="12"/>
+                  <Y id="22" val="21"/>
+                  <Width id="23" val="764"/>
+                  <Height id="24" val="302"/>
+                  <ControlName id="46" val="Table20"/>
+                  <TitleHeight id="79" val="19"/>
+                  <RowHeight id="80" val="201"/>
+                  <Elements id="81" val="7"/>
+                  <_WindowWidth id="241" val="654"/>
                 </PropertyList>
               </Control>
-              <Control _test_id="16" id="16">
+              <Control ISN_FATHER="20" PDOD="128" _test_id="28" id="28">
+                <PropertyList model="CTRL_WEB_CLIENT_COLUMN">
+                  <Width id="23" val="84"/>
+                  <ControlLayer id="25" val="1"/>
+                  <ControlName id="46" val="Column28"/>
+                  <ColumnTitle id="139" valUnicode="P:BHBno"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="20" PDOD="128" _test_id="29" id="29">
+                <PropertyList model="CTRL_WEB_CLIENT_COLUMN">
+                  <Width id="23" val="89"/>
+                  <ControlLayer id="25" val="2"/>
+                  <ControlName id="46" val="Column29"/>
+                  <Sortable id="134" val="Y"/>
+                  <ColumnTitle id="139" valUnicode="Enq_BookingNo"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="20" PDOD="128" _test_id="30" id="30">
+                <PropertyList model="CTRL_WEB_CLIENT_COLUMN">
+                  <Width id="23" val="84"/>
+                  <ControlLayer id="25" val="3"/>
+                  <ControlName id="46" val="Column30"/>
+                  <ColumnTitle id="139" valUnicode="ServiceID"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="20" PDOD="128" _test_id="31" id="31">
+                <PropertyList model="CTRL_WEB_CLIENT_COLUMN">
+                  <Width id="23" val="84"/>
+                  <ControlLayer id="25" val="4"/>
+                  <ControlName id="46" val="Column31"/>
+                  <ColumnTitle id="139" valUnicode="SupplierID"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="20" PDOD="128" _test_id="32" id="32">
+                <PropertyList model="CTRL_WEB_CLIENT_COLUMN">
+                  <Width id="23" val="92"/>
+                  <ControlLayer id="25" val="5"/>
+                  <ControlName id="46" val="Column32"/>
+                  <ColumnTitle id="139" valUnicode="Charges"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="20" PDOD="128" _test_id="33" id="33">
+                <PropertyList model="CTRL_WEB_CLIENT_COLUMN">
+                  <Width id="23" val="84"/>
+                  <ControlLayer id="25" val="6"/>
+                  <ControlName id="46" val="Column33"/>
+                  <ColumnTitle id="139" valUnicode="Rating"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="20" PDOD="128" _test_id="34" id="34">
+                <PropertyList model="CTRL_WEB_CLIENT_COLUMN">
+                  <Width id="23" val="247"/>
+                  <ControlLayer id="25" val="7"/>
+                  <ControlName id="46" val="Column34"/>
+                  <ColumnTitle id="139" valUnicode="Comment"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="20" _test_id="21" id="21">
                 <PropertyList model="CTRL_WEB_CLIENT_EDIT">
-                  <Model ID="MODEL_WEB_CLIENT" id="1">
+                  <Model ID="MODEL_WEB_CLIENT_TBL" id="1">
+                    <Var FieldID="7"/>
+                  </Model>
+                  <X id="21" val="16"/>
+                  <Y id="22" val="44"/>
+                  <Width id="23" val="76"/>
+                  <Height id="24" val="20"/>
+                  <ControlLayer id="25" val="1"/>
+                  <Data FieldID="7" id="43"/>
+                  <ControlName id="46" val="P:BHBno"/>
+                  <Border id="452"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="20" _test_id="22" id="22">
+                <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                  <Model ID="MODEL_WEB_CLIENT_TBL" id="1">
                     <Var FieldID="1"/>
                   </Model>
-                  <X id="21" val="116"/>
-                  <Y id="22" val="113"/>
+                  <X id="21" val="100"/>
+                  <Y id="22" val="44"/>
                   <Width id="23" val="76"/>
                   <Height id="24" val="20"/>
+                  <ControlLayer id="25" val="2"/>
                   <Data FieldID="1" id="43"/>
                   <ControlName id="46" val="Enq_BookingNo"/>
+                  <Border id="452"/>
                 </PropertyList>
               </Control>
-              <Control _test_id="19" id="19">
-                <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                  <Text id="19" valUnicode="SupplierID"/>
-                  <X id="21" val="64"/>
-                  <Y id="22" val="182"/>
-                  <Width id="23" val="51"/>
-                  <Height id="24" val="15"/>
-                  <ControlName id="46" val="Label19"/>
-                  <Font id="50" val="1"/>
-                </PropertyList>
-              </Control>
-              <Control _test_id="18" id="18">
+              <Control ISN_FATHER="20" _test_id="23" id="23">
                 <PropertyList model="CTRL_WEB_CLIENT_EDIT">
-                  <Model ID="MODEL_WEB_CLIENT" id="1">
-                    <Var FieldID="3"/>
+                  <Model ID="MODEL_WEB_CLIENT_TBL" id="1">
+                    <Var FieldID="2"/>
                   </Model>
-                  <X id="21" val="120"/>
-                  <Y id="22" val="182"/>
+                  <X id="21" val="189"/>
+                  <Y id="22" val="44"/>
                   <Width id="23" val="76"/>
                   <Height id="24" val="20"/>
+                  <ControlLayer id="25" val="3"/>
+                  <Data FieldID="2" id="43"/>
+                  <ControlName id="46" val="ServiceID"/>
+                  <Border id="452"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="20" _test_id="24" id="24">
+                <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                  <Model ID="MODEL_WEB_CLIENT_TBL" id="1">
+                    <Var FieldID="3"/>
+                  </Model>
+                  <X id="21" val="273"/>
+                  <Y id="22" val="44"/>
+                  <Width id="23" val="76"/>
+                  <Height id="24" val="20"/>
+                  <ControlLayer id="25" val="4"/>
                   <Data FieldID="3" id="43"/>
                   <ControlName id="46" val="SupplierID"/>
+                  <Border id="452"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="20" PDOD="17" _test_id="25" id="25">
+                <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                  <Model ID="MODEL_WEB_CLIENT_TBL" id="1">
+                    <Var FieldID="4"/>
+                  </Model>
+                  <X id="21" val="357"/>
+                  <Y id="22" val="44"/>
+                  <Width id="23" val="84"/>
+                  <Height id="24" val="20"/>
+                  <ControlLayer id="25" val="5"/>
+                  <Data FieldID="4" id="43"/>
+                  <ControlName id="46" val="Charges"/>
+                  <Border id="452"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="20" _test_id="26" id="26">
+                <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                  <Model ID="MODEL_WEB_CLIENT_TBL" id="1">
+                    <Var FieldID="5"/>
+                  </Model>
+                  <X id="21" val="449"/>
+                  <Y id="22" val="44"/>
+                  <Width id="23" val="76"/>
+                  <Height id="24" val="20"/>
+                  <ControlLayer id="25" val="6"/>
+                  <Data FieldID="5" id="43"/>
+                  <ControlName id="46" val="Rating"/>
+                  <Border id="452"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="20" _test_id="27" id="27">
+                <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                  <Model ID="MODEL_WEB_CLIENT_TBL" id="1">
+                    <Var FieldID="6"/>
+                  </Model>
+                  <X id="21" val="533"/>
+                  <Y id="22" val="44"/>
+                  <Width id="23" val="117"/>
+                  <Height id="24" val="20"/>
+                  <ControlLayer id="25" val="7"/>
+                  <Data FieldID="6" id="43"/>
+                  <ControlName id="46" val="Comment"/>
+                  <Border id="452"/>
                 </PropertyList>
               </Control>
             </FormEntry>

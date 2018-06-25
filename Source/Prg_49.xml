@@ -13,8 +13,8 @@
   <ProgramsRepository>
     <Programs>
       <Task MainProgram="N">
-        <Header Description="BookingHeader" ISN_2="1" LastIsn="2" id="49">
-          <Public val="BookingHeader"/>
+        <Header Description="BookingHeader2" ISN_2="1" LastIsn="2" id="49">
+          <Public val="BookingHeader2"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736866" _time="51388" date="21/06/2018" time="14:16:28"/>
+          <LastModified _date="736870" _time="59959" date="25/06/2018" time="16:39:19"/>
         </Header>
         <ItemIsn val="19"/>
         <Resource>
@@ -481,7 +481,7 @@
               <FormUnits id="33" val="4"/>
               <_Comment id="218"/>
               <StartupPosition id="275" val="5"/>
-              <FormName id="311" valUnicode="BookingHeader"/>
+              <FormName id="311" valUnicode="BookingHeader2"/>
             </PropertyList>
             <Control _test_id="1" id="1">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">

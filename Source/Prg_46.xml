@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736870" _time="59106" date="25/06/2018" time="16:25:06"/>
+          <LastModified _date="736870" _time="60535" date="25/06/2018" time="16:48:55"/>
         </Header>
         <ItemIsn val="19"/>
         <Resource>
@@ -887,29 +887,10 @@
                 <ControlName id="46" val="Label31"/>
               </PropertyList>
             </Control>
-            <Control PDOD="128" _test_id="38" id="38">
-              <PropertyList model="CTRL_WEB_CLIENT_SUBFORM">
-                <X id="21" val="17"/>
-                <Y id="22" val="360"/>
-                <Width id="23" val="774"/>
-                <Height id="24" val="379"/>
-                <ControlName id="46" val="Subform38"/>
-                <Arguments id="126">
-                  <Arguments>
-                    <Argument>
-                      <Variable val="1"/>
-                      <Skip val="N"/>
-                    </Argument>
-                  </Arguments>
-                </Arguments>
-                <ConnectTo id="156" val="2"/>
-                <TaskNumber comp="-1" id="183" obj="3"/>
-              </PropertyList>
-            </Control>
             <Control PDOD="128" _test_id="35" id="35">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="194"/>
-                <Y id="22" val="791"/>
+                <X id="21" val="418"/>
+                <Y id="22" val="285"/>
                 <Width id="23" val="88"/>
                 <Height id="24" val="29"/>
                 <ControlName id="46" val="Button35"/>
@@ -923,8 +904,8 @@
             </Control>
             <Control PDOD="128" _test_id="36" id="36">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="388"/>
-                <Y id="22" val="791"/>
+                <X id="21" val="612"/>
+                <Y id="22" val="285"/>
                 <Width id="23" val="88"/>
                 <Height id="24" val="29"/>
                 <ControlName id="46" val="Button36"/>
@@ -934,6 +915,25 @@
                   <InternalEventID val="393"/>
                   <PublicObject comp="-1"/>
                 </RaiseEvent>
+              </PropertyList>
+            </Control>
+            <Control PDOD="128" _test_id="38" id="38">
+              <PropertyList model="CTRL_WEB_CLIENT_SUBFORM">
+                <X id="21" val="12"/>
+                <Y id="22" val="338"/>
+                <Width id="23" val="774"/>
+                <Height id="24" val="232"/>
+                <ControlName id="46" val="Subform38"/>
+                <Arguments id="126">
+                  <Arguments>
+                    <Argument>
+                      <Variable val="1"/>
+                      <Skip val="N"/>
+                    </Argument>
+                  </Arguments>
+                </Arguments>
+                <ConnectTo id="156" val="2"/>
+                <TaskNumber comp="-1" id="183" obj="3"/>
               </PropertyList>
             </Control>
           </FormEntry>
@@ -978,7 +978,7 @@
             <External val="N"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="736870" _time="58933" date="25/06/2018" time="16:22:13"/>
+            <LastModified _date="736870" _time="60535" date="25/06/2018" time="16:48:55"/>
           </Header>
           <ItemIsn val="7"/>
           <Resource>
@@ -1099,6 +1099,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
+                    <_DitIndexForToolkit val="2"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -1123,6 +1124,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
+                    <_DitIndexForToolkit val="4"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -1169,11 +1171,59 @@
             </LogicUnit>
           </TaskLogic>
           <TaskForms>
-            <FormEntry id="1">
+            <FormEntry _last_isn="19" _last_test_id="19" id="1">
               <PropertyList model="FORM_WEB_CLIENT">
                 <_Comment id="218"/>
-                <FormName id="311" valUnicode="BookingDetail"/>
+                <FormName id="311" valUnicode="BookingDetail1"/>
               </PropertyList>
+              <Control _test_id="17" id="17">
+                <PropertyList model="CTRL_WEB_CLIENT_LABEL">
+                  <Text id="19" valUnicode="Enq_BookingNo"/>
+                  <X id="21" val="31"/>
+                  <Y id="22" val="113"/>
+                  <Width id="23" val="80"/>
+                  <Height id="24" val="15"/>
+                  <ControlName id="46" val="Label17"/>
+                  <Font id="50" val="1"/>
+                </PropertyList>
+              </Control>
+              <Control _test_id="16" id="16">
+                <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                  <Model ID="MODEL_WEB_CLIENT" id="1">
+                    <Var FieldID="1"/>
+                  </Model>
+                  <X id="21" val="116"/>
+                  <Y id="22" val="113"/>
+                  <Width id="23" val="76"/>
+                  <Height id="24" val="20"/>
+                  <Data FieldID="1" id="43"/>
+                  <ControlName id="46" val="Enq_BookingNo"/>
+                </PropertyList>
+              </Control>
+              <Control _test_id="19" id="19">
+                <PropertyList model="CTRL_WEB_CLIENT_LABEL">
+                  <Text id="19" valUnicode="SupplierID"/>
+                  <X id="21" val="64"/>
+                  <Y id="22" val="182"/>
+                  <Width id="23" val="51"/>
+                  <Height id="24" val="15"/>
+                  <ControlName id="46" val="Label19"/>
+                  <Font id="50" val="1"/>
+                </PropertyList>
+              </Control>
+              <Control _test_id="18" id="18">
+                <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                  <Model ID="MODEL_WEB_CLIENT" id="1">
+                    <Var FieldID="3"/>
+                  </Model>
+                  <X id="21" val="120"/>
+                  <Y id="22" val="182"/>
+                  <Width id="23" val="76"/>
+                  <Height id="24" val="20"/>
+                  <Data FieldID="3" id="43"/>
+                  <ControlName id="46" val="SupplierID"/>
+                </PropertyList>
+              </Control>
             </FormEntry>
           </TaskForms>
         </Task>

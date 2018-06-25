@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736870" _time="61092" date="25/06/2018" time="16:58:12"/>
+          <LastModified _date="736870" _time="62403" date="25/06/2018" time="17:20:03"/>
         </Header>
         <ItemIsn val="19"/>
         <Resource>
@@ -472,6 +472,74 @@
               </LogicLine>
             </LogicLines>
           </LogicUnit>
+          <LogicUnit id="5" propagate="78">
+            <Level val="C"/>
+            <Type val="P"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <TXT val="BokingDate"/>
+            <Expanded val="1"/>
+            <ExecuteOn_ val="O"/>
+            <LogicLines>
+              <LogicLine>
+                <Update FlowIsn="34">
+                  <FieldID val="3"/>
+                  <WithValue val="1"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="6" propagate="78">
+            <Level val="H"/>
+            <Type val="U"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="U"/>
+              <PublicObject comp="-1" obj="4"/>
+            </Event>
+            <Expanded val="1"/>
+            <ExecuteOn_ val="O"/>
+            <LogicLines>
+              <LogicLine>
+                <CallTask FlowIsn="35">
+                  <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                    <PublicObject comp="-1"/>
+                  </Event>
+                  <TaskID comp="-1" obj="83"/>
+                  <Lock val="N"/>
+                  <Arguments>
+                    <Argument>
+                      <Variable val="1"/>
+                      <Skip val="N"/>
+                    </Argument>
+                  </Arguments>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <IsRoute val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
         </TaskLogic>
         <TaskForms>
           <FormEntry _last_isn="38" _last_test_id="38" id="1">
@@ -526,6 +594,10 @@
                 <Data FieldID="19" id="43"/>
                 <ControlName id="46" val="Button32"/>
                 <Format id="82" valUnicode="..."/>
+                <RaiseEvent id="234">
+                  <EventType val="U"/>
+                  <PublicObject comp="-1" obj="4"/>
+                </RaiseEvent>
               </PropertyList>
             </Control>
             <Control PDOD="128" _test_id="4" id="4">
@@ -921,8 +993,8 @@
               <PropertyList model="CTRL_WEB_CLIENT_SUBFORM">
                 <X id="21" val="12"/>
                 <Y id="22" val="338"/>
-                <Width id="23" val="774"/>
-                <Height id="24" val="232"/>
+                <Width id="23" val="813"/>
+                <Height id="24" val="267"/>
                 <ControlName id="46" val="Subform38"/>
                 <Arguments id="126">
                   <Arguments>
@@ -960,6 +1032,12 @@
             <PublicObject comp="-1"/>
           </Event>
         </EVNT>
+        <EVNT DESC="Select EnqWithCust" FORCE_EXIT="N" id="4">
+          <Event>
+            <EventType val="N"/>
+            <PublicObject comp="-1"/>
+          </Event>
+        </EVNT>
         <Task MainProgram="N">
           <Header Description="BookingDetail" ISN_2="3" LastIsn="3" id="46">
             <ExecutionRight comp="-1"/>
@@ -978,7 +1056,7 @@
             <External val="N"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="736870" _time="61092" date="25/06/2018" time="16:58:12"/>
+            <LastModified _date="736870" _time="61761" date="25/06/2018" time="17:09:21"/>
           </Header>
           <ItemIsn val="7"/>
           <Resource>
@@ -1178,7 +1256,6 @@
           <TaskForms>
             <FormEntry _last_isn="34" _last_test_id="34" id="1">
               <PropertyList model="FORM_WEB_CLIENT">
-                <Model id="1"/>
                 <Width id="23" val="718"/>
                 <Height id="24" val="353"/>
                 <_Comment id="218"/>
@@ -1265,7 +1342,7 @@
                   <Height id="24" val="20"/>
                   <ControlLayer id="25" val="1"/>
                   <Data FieldID="7" id="43"/>
-                  <ControlName id="46" val="P:BHBno"/>
+                  <ControlName id="46" val="PBHBno"/>
                   <Border id="452"/>
                 </PropertyList>
               </Control>

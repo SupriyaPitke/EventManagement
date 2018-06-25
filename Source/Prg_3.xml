@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736866" _time="60399" date="21/06/2018" time="16:46:39"/>
+          <LastModified _date="736866" _time="65724" date="21/06/2018" time="18:15:24"/>
         </Header>
         <ItemIsn val="8"/>
         <Resource>
@@ -372,6 +372,14 @@
               <FormUnits id="33" val="4"/>
               <_Comment id="218"/>
               <FormName id="311" valUnicode="MainProg"/>
+              <CustomProperties id="713">
+                <CustomProperties>
+                  <CustomProperty>
+                    <Name val="Wallpaper"/>
+                    <Expression val="6"/>
+                  </CustomProperty>
+                </CustomProperties>
+              </CustomProperties>
             </PropertyList>
             <Control PDOD="128" _test_id="1" id="1">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
@@ -561,6 +569,10 @@
           </Expression>
           <Expression id="5">
             <ExpSyntax val="'Custmer'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="6">
+            <ExpSyntax val="'Hall1.jpg'"/>
             <ExpAttribute val="A"/>
           </Expression>
         </Expressions>

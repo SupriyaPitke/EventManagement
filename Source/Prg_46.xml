@@ -29,9 +29,9 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736870" _time="62403" date="25/06/2018" time="17:20:03"/>
+          <LastModified _date="736870" _time="66906" date="25/06/2018" time="18:35:06"/>
         </Header>
-        <ItemIsn val="19"/>
+        <ItemIsn val="20"/>
         <Resource>
           <DB id="2">
             <DataObject comp="-1" obj="3"/>
@@ -189,7 +189,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="24"/>
+                  <_DitIndexForToolkit val="25"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -202,7 +202,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="23"/>
+                  <_DitIndexForToolkit val="24"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -215,7 +215,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="27"/>
+                  <_DitIndexForToolkit val="29"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -283,7 +283,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="29"/>
+                  <_DitIndexForToolkit val="31"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -309,7 +309,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="33"/>
+                  <_DitIndexForToolkit val="35"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -322,7 +322,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="30"/>
+                  <_DitIndexForToolkit val="32"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -343,6 +343,19 @@
                 </Select>
               </LogicLine>
               <LogicLine>
+                <Select FieldID="20" FlowIsn="36" id="20">
+                  <Column val="16"/>
+                  <Type val="R"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="23"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
                 <Select FieldID="19" FlowIsn="26" id="19">
                   <Column val="1"/>
                   <Type val="V"/>
@@ -356,7 +369,7 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <LNK Direction="A" EVL_CND="R" FlowIsn="19" Mode="R" SortType="20" VIEW="17" VIEWS="2">
+                <LNK Direction="A" EVL_CND="R" FlowIsn="19" Mode="R" SortType="20" VIEW="18" VIEWS="2">
                   <DB comp="-1" obj="3"/>
                   <Expanded val="1"/>
                   <Condition val="Y"/>
@@ -542,7 +555,7 @@
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="38" _last_test_id="38" id="1">
+          <FormEntry _last_isn="42" _last_test_id="42" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
               <Width id="23" val="834"/>
               <Height id="24" val="827"/>
@@ -815,6 +828,19 @@
                 <HorizontalAlignment id="65" val="3"/>
               </PropertyList>
             </Control>
+            <Control PDOD="192" _test_id="41" id="41">
+              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                <Model ID="MODEL_WEB_CLIENT" id="1">
+                  <Var FieldID="20"/>
+                </Model>
+                <X id="21" val="670"/>
+                <Y id="22" val="159"/>
+                <Width id="23" val="41"/>
+                <Height id="24" val="20"/>
+                <Data FieldID="20" id="43"/>
+                <ControlName id="46" val="Enq_Booking"/>
+              </PropertyList>
+            </Control>
             <Control _test_id="20" id="20">
               <PropertyList model="CTRL_WEB_CLIENT_EDIT">
                 <Model ID="MODEL_RICH_CLIENT" id="1">
@@ -840,6 +866,17 @@
                 <Height id="24" val="20"/>
                 <Data FieldID="4" id="43"/>
                 <ControlName id="46" val="CustomerName"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="42" id="42">
+              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
+                <Text id="19" valUnicode="Enq_Booking"/>
+                <X id="21" val="599"/>
+                <Y id="22" val="164"/>
+                <Width id="23" val="66"/>
+                <Height id="24" val="15"/>
+                <ControlName id="46" val="Label42"/>
+                <Font id="50" val="1"/>
               </PropertyList>
             </Control>
             <Control _test_id="22" id="22">

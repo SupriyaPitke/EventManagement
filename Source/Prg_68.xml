@@ -25,10 +25,10 @@
           <TaskType val="C"/>
           <Interactive val="Y"/>
           <External val="N"/>
-          <Offline val="N"/>
+          <Offline val="Y"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736860" _time="58144" date="15/06/2018" time="16:09:04"/>
+          <LastModified _date="736871" _time="64302" date="26/06/2018" time="17:51:42"/>
         </Header>
         <ItemIsn val="3"/>
         <Resource>

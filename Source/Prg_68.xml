@@ -28,7 +28,7 @@
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736860" _time="56703" date="15/06/2018" time="15:45:03"/>
+          <LastModified _date="736860" _time="58144" date="15/06/2018" time="16:09:04"/>
         </Header>
         <ItemIsn val="3"/>
         <Resource>
@@ -134,9 +134,6 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <INT_RCMP_INFO>
-                    <v>3</v>
-                  </INT_RCMP_INFO>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="N"/>
                   <Modifier val="S"/>
@@ -148,7 +145,6 @@
               </LogicLine>
               <LogicLine>
                 <Select FieldID="1" FlowIsn="3" id="1">
-                  <ASS val="1"/>
                   <Column val="1"/>
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
@@ -174,6 +170,20 @@
                 </Select>
               </LogicLine>
             </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="3" propagate="78">
+            <Level val="C"/>
+            <Type val="V"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <TXT val="EventName"/>
+            <ExecuteOn_ val="O"/>
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
@@ -315,8 +325,8 @@
           </FormEntry>
         </TaskForms>
         <Expressions>
-          <Expression id="1">
-            <ExpSyntax val="'CUS'&amp;Trim(Str(Val(Right(Trim({0,3}),7),'#######')+1,'P0#######'))"/>
+          <Expression id="4">
+            <ExpSyntax val=""/>
             <ExpAttribute val="A"/>
           </Expression>
         </Expressions>

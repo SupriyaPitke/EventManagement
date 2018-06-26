@@ -14,6 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="EventDetails" ISN_2="1" LastIsn="1" id="68">
+          <Public val="EventDeatil"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -24,11 +25,11 @@
           <SqlWhereExist val="N"/>
           <TaskType val="C"/>
           <Interactive val="Y"/>
-          <External val="N"/>
+          <External val="Y"/>
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736860" _time="58144" date="15/06/2018" time="16:09:04"/>
+          <LastModified _date="736871" _time="64353" date="26/06/2018" time="17:52:33"/>
         </Header>
         <ItemIsn val="3"/>
         <Resource>

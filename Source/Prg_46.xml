@@ -25,14 +25,13 @@
           <SqlWhereExist val="N"/>
           <TaskType val="W"/>
           <Interactive val="Y"/>
-          <RoutePath val="BookingHeader1"/>
           <External val="Y"/>
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736870" _time="63432" date="25/06/2018" time="17:37:12"/>
+          <LastModified _date="736870" _time="66906" date="25/06/2018" time="18:35:06"/>
         </Header>
-        <ItemIsn val="19"/>
+        <ItemIsn val="20"/>
         <Resource>
           <DB id="2">
             <DataObject comp="-1" obj="3"/>
@@ -190,7 +189,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="24"/>
+                  <_DitIndexForToolkit val="25"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -203,7 +202,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="23"/>
+                  <_DitIndexForToolkit val="24"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -216,7 +215,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="27"/>
+                  <_DitIndexForToolkit val="29"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -284,7 +283,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="29"/>
+                  <_DitIndexForToolkit val="31"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -310,7 +309,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="33"/>
+                  <_DitIndexForToolkit val="35"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -323,7 +322,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="30"/>
+                  <_DitIndexForToolkit val="32"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -344,6 +343,19 @@
                 </Select>
               </LogicLine>
               <LogicLine>
+                <Select FieldID="20" FlowIsn="36" id="20">
+                  <Column val="16"/>
+                  <Type val="R"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="23"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
                 <Select FieldID="19" FlowIsn="26" id="19">
                   <Column val="1"/>
                   <Type val="V"/>
@@ -357,7 +369,7 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <LNK Direction="A" EVL_CND="R" FlowIsn="19" Mode="R" SortType="20" VIEW="17" VIEWS="2">
+                <LNK Direction="A" EVL_CND="R" FlowIsn="19" Mode="R" SortType="20" VIEW="18" VIEWS="2">
                   <DB comp="-1" obj="3"/>
                   <Expanded val="1"/>
                   <Condition val="Y"/>
@@ -473,9 +485,77 @@
               </LogicLine>
             </LogicLines>
           </LogicUnit>
+          <LogicUnit id="5" propagate="78">
+            <Level val="C"/>
+            <Type val="P"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <TXT val="BokingDate"/>
+            <Expanded val="1"/>
+            <ExecuteOn_ val="O"/>
+            <LogicLines>
+              <LogicLine>
+                <Update FlowIsn="34">
+                  <FieldID val="3"/>
+                  <WithValue val="1"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="6" propagate="78">
+            <Level val="H"/>
+            <Type val="U"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="U"/>
+              <PublicObject comp="-1" obj="4"/>
+            </Event>
+            <Expanded val="1"/>
+            <ExecuteOn_ val="O"/>
+            <LogicLines>
+              <LogicLine>
+                <CallTask FlowIsn="35">
+                  <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                    <PublicObject comp="-1"/>
+                  </Event>
+                  <TaskID comp="-1" obj="83"/>
+                  <Lock val="N"/>
+                  <Arguments>
+                    <Argument>
+                      <Variable val="1"/>
+                      <Skip val="N"/>
+                    </Argument>
+                  </Arguments>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <IsRoute val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="38" _last_test_id="38" id="1">
+          <FormEntry _last_isn="42" _last_test_id="42" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
               <Width id="23" val="834"/>
               <Height id="24" val="827"/>
@@ -527,6 +607,10 @@
                 <Data FieldID="19" id="43"/>
                 <ControlName id="46" val="Button32"/>
                 <Format id="82" valUnicode="..."/>
+                <RaiseEvent id="234">
+                  <EventType val="U"/>
+                  <PublicObject comp="-1" obj="4"/>
+                </RaiseEvent>
               </PropertyList>
             </Control>
             <Control PDOD="128" _test_id="4" id="4">
@@ -744,6 +828,19 @@
                 <HorizontalAlignment id="65" val="3"/>
               </PropertyList>
             </Control>
+            <Control PDOD="192" _test_id="41" id="41">
+              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                <Model ID="MODEL_WEB_CLIENT" id="1">
+                  <Var FieldID="20"/>
+                </Model>
+                <X id="21" val="670"/>
+                <Y id="22" val="159"/>
+                <Width id="23" val="41"/>
+                <Height id="24" val="20"/>
+                <Data FieldID="20" id="43"/>
+                <ControlName id="46" val="Enq_Booking"/>
+              </PropertyList>
+            </Control>
             <Control _test_id="20" id="20">
               <PropertyList model="CTRL_WEB_CLIENT_EDIT">
                 <Model ID="MODEL_RICH_CLIENT" id="1">
@@ -769,6 +866,17 @@
                 <Height id="24" val="20"/>
                 <Data FieldID="4" id="43"/>
                 <ControlName id="46" val="CustomerName"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="42" id="42">
+              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
+                <Text id="19" valUnicode="Enq_Booking"/>
+                <X id="21" val="599"/>
+                <Y id="22" val="164"/>
+                <Width id="23" val="66"/>
+                <Height id="24" val="15"/>
+                <ControlName id="46" val="Label42"/>
+                <Font id="50" val="1"/>
               </PropertyList>
             </Control>
             <Control _test_id="22" id="22">
@@ -922,8 +1030,8 @@
               <PropertyList model="CTRL_WEB_CLIENT_SUBFORM">
                 <X id="21" val="12"/>
                 <Y id="22" val="338"/>
-                <Width id="23" val="774"/>
-                <Height id="24" val="232"/>
+                <Width id="23" val="813"/>
+                <Height id="24" val="267"/>
                 <ControlName id="46" val="Subform38"/>
                 <Arguments id="126">
                   <Arguments>
@@ -961,6 +1069,12 @@
             <PublicObject comp="-1"/>
           </Event>
         </EVNT>
+        <EVNT DESC="Select EnqWithCust" FORCE_EXIT="N" id="4">
+          <Event>
+            <EventType val="N"/>
+            <PublicObject comp="-1"/>
+          </Event>
+        </EVNT>
         <Task MainProgram="N">
           <Header Description="BookingDetail" ISN_2="3" LastIsn="3" id="46">
             <ExecutionRight comp="-1"/>
@@ -979,7 +1093,7 @@
             <External val="N"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="736870" _time="61092" date="25/06/2018" time="16:58:12"/>
+            <LastModified _date="736870" _time="61761" date="25/06/2018" time="17:09:21"/>
           </Header>
           <ItemIsn val="7"/>
           <Resource>
@@ -1265,7 +1379,7 @@
                   <Height id="24" val="20"/>
                   <ControlLayer id="25" val="1"/>
                   <Data FieldID="7" id="43"/>
-                  <ControlName id="46" val="P:BHBno"/>
+                  <ControlName id="46" val="PBHBno"/>
                   <Border id="452"/>
                 </PropertyList>
               </Control>

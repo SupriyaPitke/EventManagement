@@ -13,8 +13,8 @@
   <ProgramsRepository>
     <Programs>
       <Task MainProgram="N">
-        <Header Description="BookingHeader1" ISN_2="1" LastIsn="3" id="27">
-          <Public val="BookingHeader"/>
+        <Header Description="EnquiryBooking" ISN_2="1" LastIsn="3" id="27">
+          <Public val="BH"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -30,7 +30,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736870" _time="65566" date="25/06/2018" time="18:12:46"/>
+          <LastModified _date="736871" _time="62810" date="26/06/2018" time="17:26:50"/>
         </Header>
         <ItemIsn val="20"/>
         <Resource>
@@ -495,7 +495,7 @@
               <FormUnits id="33" val="4"/>
               <_Comment id="218"/>
               <StartupPosition id="275" val="5"/>
-              <FormName id="311" valUnicode="BookingHeader"/>
+              <FormName id="311" valUnicode="EnquiryBooking"/>
             </PropertyList>
             <Control _test_id="1" id="1">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
@@ -999,7 +999,7 @@
           </Event>
         </EVNT>
         <Task MainProgram="N">
-          <Header Description="BookingDetail" ISN_2="3" LastIsn="3" id="27">
+          <Header Description="EnquiryDetail" ISN_2="3" LastIsn="3" id="27">
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -1016,7 +1016,7 @@
             <External val="N"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="736870" _time="65324" date="25/06/2018" time="18:08:44"/>
+            <LastModified _date="736871" _time="62810" date="26/06/2018" time="17:26:50"/>
           </Header>
           <ItemIsn val="7"/>
           <Resource>
@@ -1219,7 +1219,7 @@
                 <Width id="23" val="718"/>
                 <Height id="24" val="353"/>
                 <_Comment id="218"/>
-                <FormName id="311" valUnicode="BookingDetail1"/>
+                <FormName id="311" valUnicode="EnquiryDetail"/>
               </PropertyList>
               <Control _test_id="20" id="20">
                 <PropertyList model="CTRL_WEB_CLIENT_TABLE">

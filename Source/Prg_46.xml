@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736872" _time="65328" date="27/06/2018" time="18:08:48"/>
+          <LastModified _date="736872" _time="68636" date="27/06/2018" time="19:03:56"/>
         </Header>
         <ItemIsn val="20"/>
         <Resource>
@@ -950,7 +950,8 @@
                 <Height id="24" val="20"/>
                 <Data FieldID="1" id="43"/>
                 <ControlName id="46" val="Enq_BookingNo"/>
-                <Modifiable id="53"/>
+                <Modifiable id="53" val="Y"/>
+                <TabInto id="269" val="Y"/>
               </PropertyList>
             </Control>
             <Control PDOD="128" _test_id="32" id="32">
@@ -979,7 +980,8 @@
                 <Height id="24" val="20"/>
                 <Data FieldID="2" id="43"/>
                 <ControlName id="46" val="Enq_date"/>
-                <Modifiable id="53"/>
+                <Modifiable id="53" val="Y"/>
+                <TabInto id="269" val="Y"/>
               </PropertyList>
             </Control>
             <Control PDOD="128" _test_id="5" id="5">
@@ -1037,7 +1039,9 @@
                 <Height id="24" val="20"/>
                 <Data FieldID="15" id="43"/>
                 <ControlName id="46" val="Rating"/>
+                <Modifiable id="53" val="Y"/>
                 <HorizontalAlignment id="65" val="1"/>
+                <TabInto id="269" val="Y"/>
               </PropertyList>
             </Control>
             <Control _test_id="9" id="9">
@@ -1045,13 +1049,14 @@
                 <Model ID="MODEL_RICH_CLIENT" id="1">
                   <Var FieldID="8"/>
                 </Model>
-                <X id="21" val="127"/>
+                <X id="21" val="124"/>
                 <Y id="22" val="138"/>
                 <Width id="23" val="76"/>
                 <Height id="24" val="20"/>
                 <Data FieldID="8" id="43"/>
                 <ControlName id="46" val="VenueID"/>
-                <Modifiable id="53"/>
+                <Modifiable id="53" val="Y"/>
+                <TabInto id="269" val="Y"/>
               </PropertyList>
             </Control>
             <Control PDOD="128" _test_id="33" id="33">
@@ -1147,7 +1152,8 @@
                 <Height id="24" val="20"/>
                 <Data FieldID="7" id="43"/>
                 <ControlName id="46" val="EventID"/>
-                <Modifiable id="53"/>
+                <Modifiable id="53" val="Y"/>
+                <TabInto id="269" val="Y"/>
               </PropertyList>
             </Control>
             <Control PDOD="128" _test_id="34" id="34">

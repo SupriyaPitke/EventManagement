@@ -13,8 +13,8 @@
   <ProgramsRepository>
     <Programs>
       <Task MainProgram="N">
-        <Header Description="SelectVenue" ISN_2="1" LastIsn="1" id="84">
-          <Public val="Select Venue"/>
+        <Header Description="CustomerPiclkList" ISN_2="1" LastIsn="2" id="84">
+          <Public val="CP"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -32,12 +32,12 @@
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736870" _time="61288" date="25/06/2018" time="17:01:28"/>
+          <LastModified _date="736871" _time="71145" date="26/06/2018" time="19:45:45"/>
         </Header>
         <ItemIsn val="3"/>
         <Resource>
           <DB id="1">
-            <DataObject comp="-1" obj="3"/>
+            <DataObject comp="-1" obj="6"/>
             <Access val="W"/>
             <Share val="W"/>
             <Open val="N"/>
@@ -45,12 +45,12 @@
             <IdentifyRowModifications val="84"/>
           </DB>
           <Columns>
-            <Column id="1" name="P:VenueID*">
+            <Column id="1" name="P:CustomerID">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
-                <Picture id="157" valUnicode="10"/>
+                <Picture id="157" valUnicode="50"/>
                 <StoredAs id="173" val="1"/>
-                <Size id="174" val="10"/>
+                <Size id="174" val="50"/>
                 <_Flip id="194"/>
               </PropertyList>
             </Column>
@@ -61,7 +61,7 @@
             <Column val="1"/>
             <Mode val="N"/>
           </Key>
-          <DB comp="-1" obj="3"/>
+          <DB comp="-1" obj="6"/>
           <Sort>
             <CLS val="A"/>
           </Sort>
@@ -153,7 +153,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="5"/>
+                  <_DitIndexForToolkit val="4"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -166,7 +166,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="6"/>
+                  <_DitIndexForToolkit val="5"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -211,31 +211,21 @@
               <FormUnits id="33" val="4"/>
               <_Comment id="218"/>
               <StartupPosition id="275" val="7"/>
-              <FormName id="311" valUnicode="SelectVenue"/>
+              <FormName id="311" valUnicode="CustomerList"/>
               <WindowType id="358" val="12"/>
             </PropertyList>
-            <Control _test_id="1" id="1">
-              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                <Text id="19" valUnicode="Select one of the Venue from the list"/>
-                <X id="21" val="29"/>
-                <Y id="22" val="15"/>
-                <Width id="23" val="173"/>
-                <Height id="24" val="15"/>
-                <ControlName id="46" val="Label1"/>
-              </PropertyList>
-            </Control>
             <Control _test_id="2" id="2">
               <PropertyList model="CTRL_WEB_CLIENT_TABLE">
                 <X id="21" val="30"/>
                 <Y id="22" val="65"/>
-                <Width id="23" val="291"/>
+                <Width id="23" val="369"/>
                 <Height id="24" val="296"/>
                 <ControlName id="46" val="Table2"/>
                 <LineDivider id="78" val="Y"/>
                 <TitleHeight id="79" val="20"/>
                 <RowHeight id="80" val="24"/>
                 <Elements id="81" val="2"/>
-                <_WindowWidth id="241" val="291"/>
+                <_WindowWidth id="241" val="369"/>
               </PropertyList>
             </Control>
             <Control ISN_FATHER="2" PDOD="128" _test_id="3" id="3">
@@ -244,7 +234,7 @@
                 <ControlLayer id="25" val="1"/>
                 <ControlName id="46" val="Column3"/>
                 <Sortable id="134" val="Y"/>
-                <ColumnTitle id="139" valUnicode="VenueID"/>
+                <ColumnTitle id="139" valUnicode="CustomerID"/>
               </PropertyList>
             </Control>
             <Control ISN_FATHER="2" PDOD="128" _test_id="4" id="4">
@@ -253,7 +243,7 @@
                 <ControlLayer id="25" val="2"/>
                 <ControlName id="46" val="Column4"/>
                 <Sortable id="134" val="Y"/>
-                <ColumnTitle id="139" valUnicode="VenueName"/>
+                <ColumnTitle id="139" valUnicode="CustomerName"/>
               </PropertyList>
             </Control>
             <Control ISN_FATHER="2" _test_id="5" id="5">
@@ -267,8 +257,7 @@
                 <Height id="24" val="20"/>
                 <ControlLayer id="25" val="1"/>
                 <Data FieldID="1" id="43"/>
-                <ControlName id="46" val="VenueID"/>
-                <TabOrder id="314" val="1"/>
+                <ControlName id="46" val="CustomerID"/>
                 <Border id="452"/>
               </PropertyList>
             </Control>
@@ -283,8 +272,7 @@
                 <Height id="24" val="20"/>
                 <ControlLayer id="25" val="2"/>
                 <Data FieldID="2" id="43"/>
-                <ControlName id="46" val="VenueName"/>
-                <TabOrder id="314" val="2"/>
+                <ControlName id="46" val="CustomerName"/>
                 <Border id="452"/>
               </PropertyList>
             </Control>
@@ -301,7 +289,6 @@
                   <InternalEventID val="42"/>
                   <PublicObject comp="-1"/>
                 </RaiseEvent>
-                <TabOrder id="314" val="3"/>
               </PropertyList>
             </Control>
             <Control PDOD="128" _test_id="8" id="8">
@@ -317,7 +304,6 @@
                   <InternalEventID val="393"/>
                   <PublicObject comp="-1"/>
                 </RaiseEvent>
-                <TabOrder id="314" val="4"/>
               </PropertyList>
             </Control>
           </FormEntry>

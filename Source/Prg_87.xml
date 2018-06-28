@@ -13,8 +13,8 @@
   <ProgramsRepository>
     <Programs>
       <Task MainProgram="N">
-        <Header Description="CustomerPiclkList" ISN_2="1" LastIsn="2" id="87">
-          <Public val="CP"/>
+        <Header Description="SupplierPickList" ISN_2="1" LastIsn="1" id="87">
+          <Public val="SupPicklist"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -32,12 +32,12 @@
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736871" _time="71145" date="26/06/2018" time="19:45:45"/>
+          <LastModified _date="736873" _time="69571" date="28/06/2018" time="19:19:31"/>
         </Header>
         <ItemIsn val="3"/>
         <Resource>
           <DB id="1">
-            <DataObject comp="-1" obj="6"/>
+            <DataObject comp="-1" obj="4"/>
             <Access val="W"/>
             <Share val="W"/>
             <Open val="N"/>
@@ -45,7 +45,7 @@
             <IdentifyRowModifications val="84"/>
           </DB>
           <Columns>
-            <Column id="1" name="P:CustomerID">
+            <Column id="1" name="P:SuppliierID">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
                 <Picture id="157" valUnicode="50"/>
@@ -61,7 +61,7 @@
             <Column val="1"/>
             <Mode val="N"/>
           </Key>
-          <DB comp="-1" obj="6"/>
+          <DB comp="-1" obj="4"/>
           <Sort>
             <CLS val="A"/>
           </Sort>
@@ -211,21 +211,21 @@
               <FormUnits id="33" val="4"/>
               <_Comment id="218"/>
               <StartupPosition id="275" val="7"/>
-              <FormName id="311" valUnicode="CustomerList"/>
+              <FormName id="311" valUnicode="SupplierPickList"/>
               <WindowType id="358" val="12"/>
             </PropertyList>
             <Control _test_id="2" id="2">
               <PropertyList model="CTRL_WEB_CLIENT_TABLE">
                 <X id="21" val="30"/>
                 <Y id="22" val="65"/>
-                <Width id="23" val="369"/>
-                <Height id="24" val="296"/>
+                <Width id="23" val="362"/>
+                <Height id="24" val="304"/>
                 <ControlName id="46" val="Table2"/>
                 <LineDivider id="78" val="Y"/>
                 <TitleHeight id="79" val="20"/>
                 <RowHeight id="80" val="24"/>
                 <Elements id="81" val="2"/>
-                <_WindowWidth id="241" val="369"/>
+                <_WindowWidth id="241" val="362"/>
               </PropertyList>
             </Control>
             <Control ISN_FATHER="2" PDOD="128" _test_id="3" id="3">
@@ -234,7 +234,7 @@
                 <ControlLayer id="25" val="1"/>
                 <ControlName id="46" val="Column3"/>
                 <Sortable id="134" val="Y"/>
-                <ColumnTitle id="139" valUnicode="CustomerID"/>
+                <ColumnTitle id="139" valUnicode="SupplierID"/>
               </PropertyList>
             </Control>
             <Control ISN_FATHER="2" PDOD="128" _test_id="4" id="4">
@@ -243,7 +243,7 @@
                 <ControlLayer id="25" val="2"/>
                 <ControlName id="46" val="Column4"/>
                 <Sortable id="134" val="Y"/>
-                <ColumnTitle id="139" valUnicode="CustomerName"/>
+                <ColumnTitle id="139" valUnicode="SupplierName"/>
               </PropertyList>
             </Control>
             <Control ISN_FATHER="2" _test_id="5" id="5">
@@ -257,7 +257,7 @@
                 <Height id="24" val="20"/>
                 <ControlLayer id="25" val="1"/>
                 <Data FieldID="1" id="43"/>
-                <ControlName id="46" val="CustomerID"/>
+                <ControlName id="46" val="SupplierID"/>
                 <Border id="452"/>
               </PropertyList>
             </Control>
@@ -272,14 +272,14 @@
                 <Height id="24" val="20"/>
                 <ControlLayer id="25" val="2"/>
                 <Data FieldID="2" id="43"/>
-                <ControlName id="46" val="CustomerName"/>
+                <ControlName id="46" val="SupplierName"/>
                 <Border id="452"/>
               </PropertyList>
             </Control>
             <Control PDOD="128" _test_id="7" id="7">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
                 <X id="21" val="62"/>
-                <Y id="22" val="397"/>
+                <Y id="22" val="371"/>
                 <Width id="23" val="73"/>
                 <Height id="24" val="28"/>
                 <ControlName id="46" val="Button7"/>
@@ -294,7 +294,7 @@
             <Control PDOD="128" _test_id="8" id="8">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
                 <X id="21" val="214"/>
-                <Y id="22" val="397"/>
+                <Y id="22" val="371"/>
                 <Width id="23" val="73"/>
                 <Height id="24" val="28"/>
                 <ControlName id="46" val="Button8"/>

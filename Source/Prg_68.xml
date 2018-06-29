@@ -28,7 +28,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736874" _time="68810" date="29/06/2018" time="19:06:50"/>
+          <LastModified _date="736874" _time="68872" date="29/06/2018" time="19:07:52"/>
         </Header>
         <ItemIsn val="3"/>
         <Resource>
@@ -210,7 +210,7 @@
             </PropertyList>
             <Control _test_id="1" id="1">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                <Text id="19" valUnicode="EventID:"/>
+                <Text id="19" valUnicode="Event ID:"/>
                 <X id="21" val="5"/>
                 <Y id="22" val="13"/>
                 <Width id="23" val="44"/>
@@ -229,12 +229,11 @@
                 <Height id="24" val="20"/>
                 <Data FieldID="1" id="43"/>
                 <ControlName id="46" val="EventID"/>
-                <TabOrder id="314" val="1"/>
               </PropertyList>
             </Control>
             <Control _test_id="3" id="3">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                <Text id="19" valUnicode="EventName:"/>
+                <Text id="19" valUnicode="Event Name:"/>
                 <X id="21" val="5"/>
                 <Y id="22" val="46"/>
                 <Width id="23" val="61"/>
@@ -247,13 +246,12 @@
                 <Model ID="MODEL_RICH_CLIENT" id="1">
                   <Var FieldID="2"/>
                 </Model>
-                <X id="21" val="71"/>
+                <X id="21" val="86"/>
                 <Y id="22" val="46"/>
                 <Width id="23" val="211"/>
                 <Height id="24" val="46"/>
                 <Data FieldID="2" id="43"/>
                 <ControlName id="46" val="EventName"/>
-                <TabOrder id="314" val="2"/>
               </PropertyList>
             </Control>
             <Control PDOD="128" _test_id="5" id="5">
@@ -269,7 +267,6 @@
                   <InternalEventID val="37"/>
                   <PublicObject comp="-1"/>
                 </RaiseEvent>
-                <TabOrder id="314" val="3"/>
               </PropertyList>
             </Control>
             <Control PDOD="128" _test_id="6" id="6">
@@ -285,7 +282,6 @@
                   <InternalEventID val="30"/>
                   <PublicObject comp="-1"/>
                 </RaiseEvent>
-                <TabOrder id="314" val="4"/>
               </PropertyList>
             </Control>
             <Control PDOD="128" _test_id="7" id="7">
@@ -301,7 +297,6 @@
                   <InternalEventID val="36"/>
                   <PublicObject comp="-1"/>
                 </RaiseEvent>
-                <TabOrder id="314" val="5"/>
               </PropertyList>
             </Control>
             <Control PDOD="128" _test_id="8" id="8">
@@ -317,7 +312,6 @@
                   <InternalEventID val="65"/>
                   <PublicObject comp="-1"/>
                 </RaiseEvent>
-                <TabOrder id="314" val="6"/>
               </PropertyList>
             </Control>
             <Control PDOD="128" _test_id="9" id="9">
@@ -333,7 +327,6 @@
                   <InternalEventID val="64"/>
                   <PublicObject comp="-1"/>
                 </RaiseEvent>
-                <TabOrder id="314" val="7"/>
               </PropertyList>
             </Control>
           </FormEntry>

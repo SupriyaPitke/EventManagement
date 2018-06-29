@@ -30,7 +30,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736874" _time="67967" date="29/06/2018" time="18:52:47"/>
+          <LastModified _date="736874" _time="68349" date="29/06/2018" time="18:59:09"/>
         </Header>
         <ItemIsn val="35"/>
         <Resource>
@@ -436,7 +436,7 @@
             <External val="N"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="736874" _time="67967" date="29/06/2018" time="18:52:47"/>
+            <LastModified _date="736874" _time="68349" date="29/06/2018" time="18:59:09"/>
           </Header>
           <ItemIsn val="5"/>
           <Resource>
@@ -648,7 +648,7 @@
                   <X id="21" val="10"/>
                   <Y id="22" val="13"/>
                   <Width id="23" val="297"/>
-                  <Height id="24" val="167"/>
+                  <Height id="24" val="87"/>
                   <ControlName id="46" val="Table1"/>
                   <TitleHeight id="79" val="20"/>
                   <RowHeight id="80" val="100"/>
@@ -704,7 +704,7 @@
                   <X id="21" val="110"/>
                   <Y id="22" val="37"/>
                   <Width id="23" val="96"/>
-                  <Height id="24" val="96"/>
+                  <Height id="24" val="52"/>
                   <ControlLayer id="25" val="2"/>
                   <Data FieldID="5" id="43"/>
                   <ControlName id="46" val="Image7"/>

@@ -27,9 +27,9 @@
           <Interactive val="Y"/>
           <External val="Y"/>
           <Offline val="N"/>
-          <FormType val="N"/>
+          <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736865" _time="67811" date="20/06/2018" time="18:50:11"/>
+          <LastModified _date="736874" _time="67970" date="29/06/2018" time="18:52:50"/>
         </Header>
         <ItemIsn val="16"/>
         <Resource>
@@ -751,6 +751,7 @@
               <FormUnits id="33" val="4"/>
               <_Comment id="218"/>
               <FormName id="311" valUnicode="CustomerMaster"/>
+              <WindowType id="358" val="12"/>
               <DefaultButton id="408" val="Add"/>
               <CustomProperties id="713"/>
             </PropertyList>

@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736874" _time="69082" date="29/06/2018" time="19:11:22"/>
+          <LastModified _date="736877" _time="63140" date="02/07/2018" time="17:32:20"/>
         </Header>
         <ItemIsn val="16"/>
         <Resource>
@@ -57,8 +57,8 @@
           <EvaluateEndCondition val="B"/>
           <InitialMode val="M"/>
           <Locate Direction="A"/>
-          <Range Direction="A" Exp="1"/>
-          <VarRange LastIsn="1"/>
+          <Range Direction="A"/>
+          <VarRange LastIsn="3"/>
           <TaskProperties>
             <SelectionTable val="N"/>
             <ConfirmUpdate CNFU="N"/>
@@ -308,6 +308,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
+                  <Range MAX="2" MIN="2"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -327,11 +328,12 @@
           </FormEntry>
         </TaskForms>
         <Expressions>
-          <Expression id="1">
-            <ExpSyntax val="{0,16}='FALSE'LOG"/>
+          <Expression id="2">
+            <ExpSyntax val="'FALSE'LOG"/>
             <ExpAttribute val="B"/>
           </Expression>
         </Expressions>
+        <VarRangeInfo Mode="E" VarRangeVeeIsn="16" id="3"/>
       </Task>
     </Programs>
   </ProgramsRepository>

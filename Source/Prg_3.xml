@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736873" _time="68379" date="28/06/2018" time="18:59:39"/>
+          <LastModified _date="736877" _time="65418" date="02/07/2018" time="18:10:18"/>
         </Header>
         <ItemIsn val="8"/>
         <Resource>
@@ -192,7 +192,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="1"/>
+                  <_DitIndexForToolkit val="7"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -205,7 +205,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="2"/>
+                  <_DitIndexForToolkit val="6"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -218,7 +218,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="3"/>
+                  <_DitIndexForToolkit val="5"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -244,7 +244,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="5"/>
+                  <_DitIndexForToolkit val="2"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -257,7 +257,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="6"/>
+                  <_DitIndexForToolkit val="3"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -365,56 +365,27 @@
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="9" _last_test_id="9" id="1">
+          <FormEntry _last_isn="10" _last_test_id="10" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
-              <Width id="23" val="1249"/>
+              <Width id="23" val="647"/>
               <Height id="24" val="800"/>
               <FormUnits id="33" val="4"/>
               <_Comment id="218"/>
               <FormName id="311" valUnicode="MainProg"/>
             </PropertyList>
-            <Control PDOD="128" _test_id="1" id="1">
+            <Control PDOD="128" _test_id="10" id="10">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="44"/>
-                <Y id="22" val="19"/>
-                <Width id="23" val="78"/>
+                <X id="21" val="12"/>
+                <Y id="22" val="12"/>
+                <Width id="23" val="158"/>
                 <Height id="24" val="22"/>
-                <Data FieldID="1" id="43"/>
-                <ControlName id="46" val="Supplier"/>
-                <Format id="82" valUnicode="Supplier"/>
+                <ControlName id="46" val="Button10"/>
+                <Format id="82" valUnicode="Enquiry"/>
                 <ButtonStyle id="96" val="1"/>
                 <Arguments id="126">
                   <Arguments>
                     <Argument>
-                      <Expression val="1"/>
-                      <Skip val="N"/>
-                    </Argument>
-                    <Argument>
-                      <Skip val="Y"/>
-                    </Argument>
-                  </Arguments>
-                </Arguments>
-                <RaiseEvent id="234">
-                  <EventType val="I"/>
-                  <InternalEventID val="594"/>
-                  <PublicObject comp="-1"/>
-                </RaiseEvent>
-              </PropertyList>
-            </Control>
-            <Control PDOD="128" _test_id="3" id="3">
-              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="44"/>
-                <Y id="22" val="60"/>
-                <Width id="23" val="78"/>
-                <Height id="24" val="22"/>
-                <Data FieldID="2" id="43"/>
-                <ControlName id="46" val="Button3"/>
-                <Format id="82" valUnicode="Service"/>
-                <ButtonStyle id="96" val="1"/>
-                <Arguments id="126">
-                  <Arguments>
-                    <Argument>
-                      <Expression val="3"/>
+                      <Expression val="8"/>
                       <Skip val="N"/>
                     </Argument>
                     <Argument>
@@ -430,20 +401,49 @@
                 </RaiseEvent>
               </PropertyList>
             </Control>
-            <Control PDOD="128" _test_id="4" id="4">
+            <Control PDOD="128" _test_id="6" id="6">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="44"/>
-                <Y id="22" val="101"/>
-                <Width id="23" val="78"/>
+                <X id="21" val="12"/>
+                <Y id="22" val="40"/>
+                <Width id="23" val="158"/>
                 <Height id="24" val="22"/>
-                <Data FieldID="5" id="43"/>
-                <ControlName id="46" val="Button4"/>
-                <Format id="82" valUnicode="EventDetails"/>
+                <Data FieldID="7" id="43"/>
+                <ControlName id="46" val="Button6"/>
+                <Format id="82" valUnicode="Enquiry Booking"/>
                 <ButtonStyle id="96" val="1"/>
                 <Arguments id="126">
                   <Arguments>
                     <Argument>
-                      <Expression val="4"/>
+                      <Expression val="6"/>
+                      <Skip val="N"/>
+                    </Argument>
+                    <Argument>
+                      <Expression val="2"/>
+                      <Skip val="N"/>
+                    </Argument>
+                  </Arguments>
+                </Arguments>
+                <RaiseEvent id="234">
+                  <EventType val="I"/>
+                  <InternalEventID val="594"/>
+                  <PublicObject comp="-1"/>
+                </RaiseEvent>
+              </PropertyList>
+            </Control>
+            <Control PDOD="128" _test_id="7" id="7">
+              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                <X id="21" val="12"/>
+                <Y id="22" val="68"/>
+                <Width id="23" val="158"/>
+                <Height id="24" val="22"/>
+                <Data FieldID="8" id="43"/>
+                <ControlName id="46" val="Button7"/>
+                <Format id="82" valUnicode="Venue"/>
+                <ButtonStyle id="96" val="1"/>
+                <Arguments id="126">
+                  <Arguments>
+                    <Argument>
+                      <Expression val="7"/>
                       <Skip val="N"/>
                     </Argument>
                     <Argument>
@@ -461,9 +461,9 @@
             </Control>
             <Control PDOD="128" _test_id="5" id="5">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="44"/>
-                <Y id="22" val="142"/>
-                <Width id="23" val="78"/>
+                <X id="21" val="12"/>
+                <Y id="22" val="96"/>
+                <Width id="23" val="158"/>
                 <Height id="24" val="22"/>
                 <Data FieldID="6" id="43"/>
                 <ControlName id="46" val="Button5"/>
@@ -488,38 +488,45 @@
                 </RaiseEvent>
               </PropertyList>
             </Control>
-            <Control PDOD="128" _test_id="6" id="6">
+            <Control PDOD="128" _test_id="4" id="4">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="44"/>
-                <Y id="22" val="183"/>
-                <Width id="23" val="78"/>
+                <X id="21" val="12"/>
+                <Y id="22" val="124"/>
+                <Width id="23" val="158"/>
                 <Height id="24" val="22"/>
-                <Data FieldID="7" id="43"/>
-                <ControlName id="46" val="Button6"/>
-                <Format id="82" valUnicode="EnquiryBooking"/>
+                <Data FieldID="5" id="43"/>
+                <ControlName id="46" val="Button4"/>
+                <Format id="82" valUnicode="Event Details"/>
                 <ButtonStyle id="96" val="1"/>
+                <Arguments id="126">
+                  <Arguments>
+                    <Argument>
+                      <Expression val="4"/>
+                      <Skip val="N"/>
+                    </Argument>
+                    <Argument>
+                      <Expression val="2"/>
+                      <Skip val="N"/>
+                    </Argument>
+                  </Arguments>
+                </Arguments>
+                <RaiseEvent id="234">
+                  <EventType val="I"/>
+                  <InternalEventID val="594"/>
+                  <PublicObject comp="-1"/>
+                </RaiseEvent>
               </PropertyList>
             </Control>
-            <Control PDOD="128" _test_id="7" id="7">
+            <Control PDOD="128" _test_id="3" id="3">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="44"/>
-                <Y id="22" val="224"/>
-                <Width id="23" val="78"/>
+                <X id="21" val="12"/>
+                <Y id="22" val="152"/>
+                <Width id="23" val="158"/>
                 <Height id="24" val="22"/>
-                <Data FieldID="8" id="43"/>
-                <ControlName id="46" val="Button7"/>
-                <Format id="82" valUnicode="VenuDetails"/>
+                <Data FieldID="2" id="43"/>
+                <ControlName id="46" val="Button3"/>
+                <Format id="82" valUnicode="Service"/>
                 <ButtonStyle id="96" val="1"/>
-              </PropertyList>
-            </Control>
-            <Control PDOD="128" _test_id="9" id="9">
-              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="44"/>
-                <Y id="22" val="270"/>
-                <Width id="23" val="78"/>
-                <Height id="24" val="22"/>
-                <ControlName id="46" val="NewService"/>
-                <Format id="82" valUnicode="NewService"/>
                 <Arguments id="126">
                   <Arguments>
                     <Argument>
@@ -539,26 +546,41 @@
                 </RaiseEvent>
               </PropertyList>
             </Control>
-            <Control PDOD="128" _test_id="8" id="8">
-              <PropertyList model="CTRL_WEB_CLIENT_SUBFORM">
-                <X id="21" val="44"/>
-                <Y id="22" val="388"/>
-                <Width id="23" val="380"/>
-                <Height id="24" val="150"/>
-                <ControlName id="46" val="DefaultOutlet"/>
-                <Arguments id="126"/>
-                <ConnectTo id="156" val="4"/>
-                <AutomaticRefresh id="312"/>
-                <IsRouterOutlet id="707" val="Y"/>
-                <DefaultOutlet id="712" val="Y"/>
+            <Control PDOD="128" _test_id="1" id="1">
+              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                <X id="21" val="12"/>
+                <Y id="22" val="180"/>
+                <Width id="23" val="158"/>
+                <Height id="24" val="22"/>
+                <Data FieldID="1" id="43"/>
+                <ControlName id="46" val="Supplier"/>
+                <Format id="82" valUnicode="Supplier"/>
+                <ButtonStyle id="96" val="1"/>
+                <Arguments id="126">
+                  <Arguments>
+                    <Argument>
+                      <Expression val="1"/>
+                      <Skip val="N"/>
+                    </Argument>
+                    <Argument>
+                      <Expression val="2"/>
+                      <Skip val="N"/>
+                    </Argument>
+                  </Arguments>
+                </Arguments>
+                <RaiseEvent id="234">
+                  <EventType val="I"/>
+                  <InternalEventID val="594"/>
+                  <PublicObject comp="-1"/>
+                </RaiseEvent>
               </PropertyList>
             </Control>
             <Control PDOD="128" _test_id="2" id="2">
               <PropertyList model="CTRL_WEB_CLIENT_SUBFORM">
-                <X id="21" val="44"/>
-                <Y id="22" val="583"/>
-                <Width id="23" val="376"/>
-                <Height id="24" val="160"/>
+                <X id="21" val="12"/>
+                <Y id="22" val="225"/>
+                <Width id="23" val="617"/>
+                <Height id="24" val="563"/>
                 <ControlName id="46" val="Subform2"/>
                 <Arguments id="126"/>
                 <ConnectTo id="156" val="4"/>
@@ -588,6 +610,18 @@
           </Expression>
           <Expression id="5">
             <ExpSyntax val="'Custmer'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="6">
+            <ExpSyntax val="'Booking'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="7">
+            <ExpSyntax val="'Venue'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="8">
+            <ExpSyntax val="'Enquiry'"/>
             <ExpAttribute val="A"/>
           </Expression>
         </Expressions>

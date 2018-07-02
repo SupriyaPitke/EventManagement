@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736877" _time="66741" date="02/07/2018" time="18:32:21"/>
+          <LastModified _date="736877" _time="68289" date="02/07/2018" time="18:58:09"/>
         </Header>
         <ItemIsn val="8"/>
         <Resource>
@@ -445,7 +445,7 @@
         <TaskForms>
           <FormEntry _last_isn="10" _last_test_id="10" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
-              <Width id="23" val="647"/>
+              <Width id="23" val="658"/>
               <Height id="24" val="800"/>
               <FormUnits id="33" val="4"/>
               <_Comment id="218"/>
@@ -656,7 +656,7 @@
             <Control PDOD="128" _test_id="2" id="2">
               <PropertyList model="CTRL_WEB_CLIENT_SUBFORM">
                 <X id="21" val="12"/>
-                <Y id="22" val="225"/>
+                <Y id="22" val="208"/>
                 <Width id="23" val="617"/>
                 <Height id="24" val="563"/>
                 <ControlName id="46" val="Subform2"/>

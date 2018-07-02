@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736873" _time="71618" date="28/06/2018" time="19:53:38"/>
+          <LastModified _date="736877" _time="38229" date="02/07/2018" time="10:37:09"/>
         </Header>
         <ItemIsn val="17"/>
         <Resource>
@@ -1063,27 +1063,27 @@
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="3">
-            <ExpSyntax val="{0,2}&lt;>' '"/>
+            <ExpSyntax val="{0,2}=' '"/>
             <ExpAttribute val="B"/>
           </Expression>
           <Expression id="4">
-            <ExpSyntax val="{0,3}&lt;>' '"/>
+            <ExpSyntax val="{0,3}=' '"/>
             <ExpAttribute val="B"/>
           </Expression>
           <Expression id="5">
-            <ExpSyntax val="{0,4}&lt;>''"/>
+            <ExpSyntax val="{0,4}=''"/>
             <ExpAttribute val="B"/>
           </Expression>
           <Expression id="6">
-            <ExpSyntax val="{0,5}&lt;>''"/>
+            <ExpSyntax val="{0,5}=''"/>
             <ExpAttribute val="B"/>
           </Expression>
           <Expression id="7">
-            <ExpSyntax val="{0,6}&lt;>''"/>
+            <ExpSyntax val="{0,6}=''"/>
             <ExpAttribute val="B"/>
           </Expression>
           <Expression id="8">
-            <ExpSyntax val="{0,7}&lt;>' '"/>
+            <ExpSyntax val="{0,7}=' '"/>
             <ExpAttribute val="B"/>
           </Expression>
         </Expressions>

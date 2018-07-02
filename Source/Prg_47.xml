@@ -32,9 +32,9 @@
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736870" _time="61288" date="25/06/2018" time="17:01:28"/>
+          <LastModified _date="736877" _time="65936" date="02/07/2018" time="18:18:56"/>
         </Header>
-        <ItemIsn val="3"/>
+        <ItemIsn val="4"/>
         <Resource>
           <DB id="1">
             <DataObject comp="-1" obj="3"/>
@@ -153,7 +153,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="5"/>
+                  <_DitIndexForToolkit val="6"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -166,7 +166,19 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="6"/>
+                  <_DitIndexForToolkit val="7"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="4" FlowIsn="9" id="4">
+                  <Column val="3"/>
+                  <Type val="R"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -204,7 +216,7 @@
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="8" _last_test_id="8" id="1">
+          <FormEntry _last_isn="10" _last_test_id="10" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
               <Width id="23" val="441"/>
               <Height id="24" val="452"/>
@@ -228,14 +240,14 @@
               <PropertyList model="CTRL_WEB_CLIENT_TABLE">
                 <X id="21" val="30"/>
                 <Y id="22" val="65"/>
-                <Width id="23" val="291"/>
+                <Width id="23" val="377"/>
                 <Height id="24" val="296"/>
                 <ControlName id="46" val="Table2"/>
                 <LineDivider id="78" val="Y"/>
                 <TitleHeight id="79" val="20"/>
-                <RowHeight id="80" val="24"/>
-                <Elements id="81" val="2"/>
-                <_WindowWidth id="241" val="291"/>
+                <RowHeight id="80" val="100"/>
+                <Elements id="81" val="3"/>
+                <_WindowWidth id="241" val="375"/>
               </PropertyList>
             </Control>
             <Control ISN_FATHER="2" PDOD="128" _test_id="3" id="3">
@@ -256,6 +268,14 @@
                 <ColumnTitle id="139" valUnicode="VenueName"/>
               </PropertyList>
             </Control>
+            <Control ISN_FATHER="2" PDOD="128" _test_id="9" id="9">
+              <PropertyList model="CTRL_WEB_CLIENT_COLUMN">
+                <Width id="23" val="104"/>
+                <ControlLayer id="25" val="3"/>
+                <ControlName id="46" val="Column9"/>
+                <ColumnTitle id="139" valUnicode=""/>
+              </PropertyList>
+            </Control>
             <Control ISN_FATHER="2" _test_id="5" id="5">
               <PropertyList model="CTRL_WEB_CLIENT_EDIT">
                 <Model ID="MODEL_RICH_CLIENT_TBL" id="1">
@@ -268,7 +288,6 @@
                 <ControlLayer id="25" val="1"/>
                 <Data FieldID="1" id="43"/>
                 <ControlName id="46" val="VenueID"/>
-                <TabOrder id="314" val="1"/>
                 <Border id="452"/>
               </PropertyList>
             </Control>
@@ -279,13 +298,23 @@
                 </Model>
                 <X id="21" val="120"/>
                 <Y id="22" val="89"/>
-                <Width id="23" val="268"/>
+                <Width id="23" val="178"/>
                 <Height id="24" val="20"/>
                 <ControlLayer id="25" val="2"/>
                 <Data FieldID="2" id="43"/>
                 <ControlName id="46" val="VenueName"/>
-                <TabOrder id="314" val="2"/>
                 <Border id="452"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="2" PDOD="128" _test_id="10" id="10">
+              <PropertyList model="CTRL_WEB_CLIENT_IMAGE">
+                <X id="21" val="303"/>
+                <Y id="22" val="89"/>
+                <Width id="23" val="96"/>
+                <Height id="24" val="96"/>
+                <ControlLayer id="25" val="3"/>
+                <Data FieldID="2" id="43"/>
+                <ControlName id="46" val="Image10"/>
               </PropertyList>
             </Control>
             <Control PDOD="128" _test_id="7" id="7">
@@ -301,7 +330,6 @@
                   <InternalEventID val="42"/>
                   <PublicObject comp="-1"/>
                 </RaiseEvent>
-                <TabOrder id="314" val="3"/>
               </PropertyList>
             </Control>
             <Control PDOD="128" _test_id="8" id="8">
@@ -317,7 +345,6 @@
                   <InternalEventID val="393"/>
                   <PublicObject comp="-1"/>
                 </RaiseEvent>
-                <TabOrder id="314" val="4"/>
               </PropertyList>
             </Control>
           </FormEntry>

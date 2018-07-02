@@ -30,7 +30,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736877" _time="61595" date="02/07/2018" time="17:06:35"/>
+          <LastModified _date="736877" _time="67648" date="02/07/2018" time="18:47:28"/>
         </Header>
         <ItemIsn val="35"/>
         <Resource>
@@ -436,7 +436,7 @@
             <External val="N"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="736874" _time="68349" date="29/06/2018" time="18:59:09"/>
+            <LastModified _date="736877" _time="67648" date="02/07/2018" time="18:47:28"/>
           </Header>
           <ItemIsn val="5"/>
           <Resource>
@@ -599,6 +599,9 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
+                    <INT_DIT_INFO>
+                      <v>7</v>
+                    </INT_DIT_INFO>
                     <_DitIndexForToolkit val="5"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
@@ -645,13 +648,13 @@
               </PropertyList>
               <Control _test_id="1" id="1">
                 <PropertyList model="CTRL_WEB_CLIENT_TABLE">
-                  <X id="21" val="10"/>
-                  <Y id="22" val="13"/>
+                  <X id="21" val="12"/>
+                  <Y id="22" val="12"/>
                   <Width id="23" val="297"/>
-                  <Height id="24" val="87"/>
+                  <Height id="24" val="67"/>
                   <ControlName id="46" val="Table1"/>
                   <TitleHeight id="79" val="20"/>
-                  <RowHeight id="80" val="100"/>
+                  <RowHeight id="80" val="12"/>
                   <Elements id="81" val="3"/>
                   <_WindowWidth id="241" val="295"/>
                 </PropertyList>
@@ -660,7 +663,7 @@
                 <PropertyList model="CTRL_WEB_CLIENT_COLUMN">
                   <Width id="23" val="96"/>
                   <ControlLayer id="25" val="1"/>
-                  <ControlName id="46" val="ImageDes"/>
+                  <ControlName id="46" val="ImageDes1"/>
                   <Sortable id="134" val="Y"/>
                   <ColumnTitle id="139" valUnicode="Image Description"/>
                 </PropertyList>
@@ -686,8 +689,8 @@
                   <Model ID="MODEL_WEB_CLIENT_TBL" id="1">
                     <Var FieldID="5"/>
                   </Model>
-                  <X id="21" val="14"/>
-                  <Y id="22" val="37"/>
+                  <X id="21" val="16"/>
+                  <Y id="22" val="36"/>
                   <Width id="23" val="82"/>
                   <Height id="24" val="20"/>
                   <ControlLayer id="25" val="1"/>
@@ -696,18 +699,17 @@
                   <Border id="452"/>
                 </PropertyList>
               </Control>
-              <Control ISN_FATHER="1" PDOD="128" _test_id="7" id="7">
+              <Control ISN_FATHER="1" _test_id="7" id="7">
                 <PropertyList model="CTRL_WEB_CLIENT_IMAGE">
-                  <Model ID="MODEL_WEB_CLIENT_TBL" id="1">
-                    <Var FieldID="2"/>
-                  </Model>
-                  <X id="21" val="110"/>
-                  <Y id="22" val="37"/>
+                  <Model id="1"/>
+                  <X id="21" val="112"/>
+                  <Y id="22" val="36"/>
                   <Width id="23" val="96"/>
-                  <Height id="24" val="52"/>
+                  <Height id="24" val="39"/>
                   <ControlLayer id="25" val="2"/>
-                  <Data FieldID="5" id="43"/>
+                  <Data Exp="5" id="43"/>
                   <ControlName id="46" val="Image7"/>
+                  <Attribute id="83" val="85"/>
                 </PropertyList>
               </Control>
               <Control ISN_FATHER="1" PDOD="17" _test_id="5" id="5">
@@ -715,8 +717,8 @@
                   <Model ID="MODEL_RICH_CLIENT_TBL" id="1">
                     <Var FieldID="3"/>
                   </Model>
-                  <X id="21" val="215"/>
-                  <Y id="22" val="37"/>
+                  <X id="21" val="217"/>
+                  <Y id="22" val="36"/>
                   <Width id="23" val="84"/>
                   <Height id="24" val="20"/>
                   <ControlLayer id="25" val="3"/>
@@ -739,6 +741,10 @@
             <Expression id="4">
               <ExpSyntax val="{0,3}=0"/>
               <ExpAttribute val="B"/>
+            </Expression>
+            <Expression id="5">
+              <ExpSyntax val="Trim({0,5})"/>
+              <ExpAttribute val="A"/>
             </Expression>
           </Expressions>
           <VarRangeInfo Mode="E" VarRangeVeeIsn="1" id="2"/>

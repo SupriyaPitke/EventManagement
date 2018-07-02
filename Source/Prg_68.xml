@@ -22,13 +22,13 @@
             <ParametersAttributes/>
           </ReturnValue>
           <SqlWhereExist val="N"/>
-          <TaskType val="C"/>
+          <TaskType val="W"/>
           <Interactive val="Y"/>
           <External val="N"/>
-          <Offline val="Y"/>
-          <FormType val="M"/>
+          <Offline val="N"/>
+          <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736871" _time="64302" date="26/06/2018" time="17:51:42"/>
+          <LastModified _date="736874" _time="68872" date="29/06/2018" time="19:07:52"/>
         </Header>
         <ItemIsn val="3"/>
         <Resource>
@@ -83,7 +83,7 @@
             <AllowIndexChange val="Y"/>
             <AllowSorting val="Y"/>
             <AllowIOFiles val="N"/>
-            <TabbingCycle val="R"/>
+            <RecordCycle val="Y"/>
             <AllowEvents val="Y"/>
             <AllowIndexOptimization val="Y"/>
             <AllowLocationInQuery val="Y"/>
@@ -134,6 +134,9 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
+                  <INT_RCMP_INFO>
+                    <v>3</v>
+                  </INT_RCMP_INFO>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="N"/>
                   <Modifier val="S"/>
@@ -145,6 +148,7 @@
               </LogicLine>
               <LogicLine>
                 <Select FieldID="1" FlowIsn="3" id="1">
+                  <ASS val="5"/>
                   <Column val="1"/>
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
@@ -183,71 +187,79 @@
               <PublicObject comp="-1"/>
             </Event>
             <TXT val="EventName"/>
+            <Expanded val="1"/>
             <ExecuteOn_ val="O"/>
+            <LogicLines>
+              <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="4" FlowIsn="11" IMG_DEF_CHG="N" Image="C" Mode="E" TTL_DEF_CHG="N" TitleTxt="Error" VR_DISP="B">
+                  <AppendToErrorLog val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
+              </LogicLine>
+            </LogicLines>
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
           <FormEntry _last_isn="9" _last_test_id="9" id="1">
-            <PropertyList model="FORM_RICH_CLIENT">
+            <PropertyList model="FORM_WEB_CLIENT">
+              <FormUnits id="33" val="4"/>
               <_Comment id="218"/>
               <FormName id="311" valUnicode="EventDetails"/>
             </PropertyList>
-            <Control _test_id="3" id="3">
-              <PropertyList model="CTRL_RICH_CLIENT_LABEL">
-                <Text id="19" valUnicode="EventID:"/>
-                <X id="21" val="4"/>
-                <Y id="22" val="8"/>
-                <Width id="23" val="35"/>
-                <Height id="24" val="9"/>
-                <Style id="63" val="7"/>
-                <_Orientation id="143"/>
-              </PropertyList>
-            </Control>
             <Control _test_id="1" id="1">
-              <PropertyList model="CTRL_RICH_CLIENT_EDIT">
-                <Model ID="MODEL_RICH_CLIENT" id="1">
-                  <Var FieldID="1"/>
-                </Model>
-                <X id="21" val="57"/>
-                <Y id="22" val="8"/>
-                <Width id="23" val="61"/>
-                <Height id="24" val="12"/>
-                <Data FieldID="1" id="43"/>
-                <ControlName id="46" val="EventID"/>
-                <TabOrder id="314" val="1"/>
-              </PropertyList>
-            </Control>
-            <Control _test_id="4" id="4">
-              <PropertyList model="CTRL_RICH_CLIENT_LABEL">
-                <Text id="19" valUnicode="EventName:"/>
-                <X id="21" val="4"/>
-                <Y id="22" val="28"/>
-                <Width id="23" val="49"/>
-                <Height id="24" val="9"/>
-                <Style id="63" val="7"/>
-                <_Orientation id="143"/>
+              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
+                <Text id="19" valUnicode="Event ID:"/>
+                <X id="21" val="5"/>
+                <Y id="22" val="13"/>
+                <Width id="23" val="44"/>
+                <Height id="24" val="15"/>
+                <ControlName id="46" val="Label1"/>
               </PropertyList>
             </Control>
             <Control _test_id="2" id="2">
-              <PropertyList model="CTRL_RICH_CLIENT_EDIT">
+              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                <Model ID="MODEL_RICH_CLIENT" id="1">
+                  <Var FieldID="1"/>
+                </Model>
+                <X id="21" val="71"/>
+                <Y id="22" val="13"/>
+                <Width id="23" val="76"/>
+                <Height id="24" val="20"/>
+                <Data FieldID="1" id="43"/>
+                <ControlName id="46" val="EventID"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="3" id="3">
+              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
+                <Text id="19" valUnicode="Event Name:"/>
+                <X id="21" val="5"/>
+                <Y id="22" val="46"/>
+                <Width id="23" val="61"/>
+                <Height id="24" val="15"/>
+                <ControlName id="46" val="Label3"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="4" id="4">
+              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
                 <Model ID="MODEL_RICH_CLIENT" id="1">
                   <Var FieldID="2"/>
                 </Model>
-                <X id="21" val="57"/>
-                <Y id="22" val="28"/>
-                <Width id="23" val="169"/>
-                <Height id="24" val="28"/>
+                <X id="21" val="86"/>
+                <Y id="22" val="46"/>
+                <Width id="23" val="211"/>
+                <Height id="24" val="46"/>
                 <Data FieldID="2" id="43"/>
                 <ControlName id="46" val="EventName"/>
-                <TabOrder id="314" val="2"/>
               </PropertyList>
             </Control>
             <Control PDOD="128" _test_id="5" id="5">
-              <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
-                <X id="21" val="12"/>
-                <Y id="22" val="76"/>
-                <Width id="23" val="41"/>
-                <Height id="24" val="14"/>
+              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                <X id="21" val="15"/>
+                <Y id="22" val="123"/>
+                <Width id="23" val="51"/>
+                <Height id="24" val="23"/>
                 <ControlName id="46" val="Add"/>
                 <Format id="82" valUnicode="Add"/>
                 <RaiseEvent id="234">
@@ -255,15 +267,14 @@
                   <InternalEventID val="37"/>
                   <PublicObject comp="-1"/>
                 </RaiseEvent>
-                <TabOrder id="314" val="3"/>
               </PropertyList>
             </Control>
             <Control PDOD="128" _test_id="6" id="6">
-              <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
-                <X id="21" val="58"/>
-                <Y id="22" val="76"/>
-                <Width id="23" val="41"/>
-                <Height id="24" val="14"/>
+              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                <X id="21" val="73"/>
+                <Y id="22" val="123"/>
+                <Width id="23" val="51"/>
+                <Height id="24" val="23"/>
                 <ControlName id="46" val="Modify"/>
                 <Format id="82" valUnicode="Modify"/>
                 <RaiseEvent id="234">
@@ -271,15 +282,14 @@
                   <InternalEventID val="30"/>
                   <PublicObject comp="-1"/>
                 </RaiseEvent>
-                <TabOrder id="314" val="4"/>
               </PropertyList>
             </Control>
             <Control PDOD="128" _test_id="7" id="7">
-              <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
-                <X id="21" val="104"/>
-                <Y id="22" val="76"/>
-                <Width id="23" val="41"/>
-                <Height id="24" val="14"/>
+              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                <X id="21" val="130"/>
+                <Y id="22" val="123"/>
+                <Width id="23" val="51"/>
+                <Height id="24" val="23"/>
                 <ControlName id="46" val="Delete"/>
                 <Format id="82" valUnicode="Delete"/>
                 <RaiseEvent id="234">
@@ -287,46 +297,47 @@
                   <InternalEventID val="36"/>
                   <PublicObject comp="-1"/>
                 </RaiseEvent>
-                <TabOrder id="314" val="5"/>
-              </PropertyList>
-            </Control>
-            <Control PDOD="128" _test_id="9" id="9">
-              <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
-                <X id="21" val="150"/>
-                <Y id="22" val="76"/>
-                <Width id="23" val="41"/>
-                <Height id="24" val="14"/>
-                <ControlName id="46" val="Save"/>
-                <Format id="82" valUnicode="Save"/>
-                <RaiseEvent id="234">
-                  <EventType val="I"/>
-                  <InternalEventID val="293"/>
-                  <PublicObject comp="-1"/>
-                </RaiseEvent>
-                <TabOrder id="314" val="6"/>
               </PropertyList>
             </Control>
             <Control PDOD="128" _test_id="8" id="8">
-              <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
-                <X id="21" val="196"/>
-                <Y id="22" val="76"/>
-                <Width id="23" val="59"/>
-                <Height id="24" val="14"/>
-                <ControlName id="46" val="ViewRefresh"/>
-                <Format id="82" valUnicode="ViewRefresh"/>
+              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                <X id="21" val="188"/>
+                <Y id="22" val="123"/>
+                <Width id="23" val="51"/>
+                <Height id="24" val="23"/>
+                <ControlName id="46" val="Next"/>
+                <Format id="82" valUnicode="Next"/>
                 <RaiseEvent id="234">
                   <EventType val="I"/>
-                  <InternalEventID val="295"/>
+                  <InternalEventID val="65"/>
                   <PublicObject comp="-1"/>
                 </RaiseEvent>
-                <TabOrder id="314" val="7"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="128" _test_id="9" id="9">
+              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                <X id="21" val="245"/>
+                <Y id="22" val="123"/>
+                <Width id="23" val="68"/>
+                <Height id="24" val="23"/>
+                <ControlName id="46" val="Previous"/>
+                <Format id="82" valUnicode="Previous"/>
+                <RaiseEvent id="234">
+                  <EventType val="I"/>
+                  <InternalEventID val="64"/>
+                  <PublicObject comp="-1"/>
+                </RaiseEvent>
               </PropertyList>
             </Control>
           </FormEntry>
         </TaskForms>
         <Expressions>
           <Expression id="4">
-            <ExpSyntax val=""/>
+            <ExpSyntax val="'Mandatory fields: '&amp;'Event Name'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="5">
+            <ExpSyntax val="'EVE'&amp;Trim(Str(Val(Right(Trim({0,3}),7),'#######')+1,'P0#######'))"/>
             <ExpAttribute val="A"/>
           </Expression>
         </Expressions>

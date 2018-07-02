@@ -20,6 +20,8 @@
  
  
  
+ 
+ 
 <DataObject PhysicalName="EventDetail" Resident="N" UniqueISNConvState="12" data_source="SQLite Database" id="2" name="EventDetail">
 
   <Encrypt val="N"/>
@@ -188,14 +190,18 @@
     </Column>
     <Column id="5" name="Capacity">
       <PropertyList model="FIELD">
-        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
         <Picture id="157" valUnicode="5"/>
-        <StoredAs id="173" val="3"/>
-        <Size id="174" val="5"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
         <Definition id="175" val="2"/>
         <DbColumnName id="178" val="Capacity"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="5"/>
+        <_Negative id="192"/>
         <_Flip id="194"/>
-        <_FieldPhysical Name="Capacity" PIC_U="5" Size="5" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldPhysical Name="Capacity" PIC_U="5" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
       </PropertyList>
     </Column>
     <Column id="6" name="Parking">
@@ -424,10 +430,11 @@
       <PropertyList model="FIELD">
         <Model attr_obj="FIELD_ALPHA" comp="-1" id="1" obj="12"/>
         <StoredAs id="173" val="3"/>
+        <Size id="174" val="100"/>
         <Definition id="175" val="2"/>
         <DbColumnName id="178" val="Email"/>
         <_Flip id="194"/>
-        <_FieldPhysical Name="Email" PIC_U="20" Size="20" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldPhysical Name="Email" PIC_U="100" Size="100" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
       </PropertyList>
     </Column>
   </Columns>
@@ -682,10 +689,11 @@
       <PropertyList model="FIELD">
         <Model attr_obj="FIELD_ALPHA" comp="-1" id="1" obj="12"/>
         <StoredAs id="173" val="3"/>
+        <Size id="174" val="100"/>
         <Definition id="175" val="2"/>
         <DbColumnName id="178" val="Email"/>
         <_Flip id="194"/>
-        <_FieldPhysical Name="Email" PIC_U="20" Size="20" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldPhysical Name="Email" PIC_U="100" Size="100" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
       </PropertyList>
     </Column>
     <Column id="9" name="BirthDate">
@@ -847,10 +855,11 @@
       <PropertyList model="FIELD">
         <Model attr_obj="FIELD_ALPHA" comp="-1" id="1" obj="12"/>
         <StoredAs id="173" val="3"/>
+        <Size id="174" val="100"/>
         <Definition id="175" val="2"/>
         <DbColumnName id="178" val="Email"/>
         <_Flip id="194"/>
-        <_FieldPhysical Name="Email" PIC_U="20" Size="20" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldPhysical Name="Email" PIC_U="100" Size="100" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
       </PropertyList>
     </Column>
     <Column id="7" name="EventID">
@@ -1237,6 +1246,18 @@
         <DbColumnName id="178" val="ServiceID"/>
         <_Flip id="194"/>
         <_FieldPhysical Name="ServiceID" PIC_U="10" Size="10" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="4" name="ImageDes">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="100"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="ImageDes"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="ImageDes" PIC_U="100" Size="100" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
       </PropertyList>
     </Column>
     <Column id="2" name="Image">

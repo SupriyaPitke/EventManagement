@@ -24,11 +24,12 @@
           <SqlWhereExist val="N"/>
           <TaskType val="W"/>
           <Interactive val="Y"/>
+          <RoutePath val="EventDetails"/>
           <External val="N"/>
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736874" _time="68872" date="29/06/2018" time="19:07:52"/>
+          <LastModified _date="736877" _time="65585" date="02/07/2018" time="18:13:05"/>
         </Header>
         <ItemIsn val="3"/>
         <Resource>

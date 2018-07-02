@@ -25,11 +25,12 @@
           <SqlWhereExist val="N"/>
           <TaskType val="W"/>
           <Interactive val="Y"/>
+          <RoutePath val="Booking"/>
           <External val="Y"/>
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736877" _time="68145" date="02/07/2018" time="18:55:45"/>
+          <LastModified _date="736877" _time="68851" date="02/07/2018" time="19:07:31"/>
         </Header>
         <ItemIsn val="38"/>
         <Resource>
@@ -1818,7 +1819,7 @@
             <External val="N"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="736877" _time="68145" date="02/07/2018" time="18:55:45"/>
+            <LastModified _date="736877" _time="68851" date="02/07/2018" time="19:07:31"/>
           </Header>
           <ItemIsn val="17"/>
           <Resource>
@@ -2024,7 +2025,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="10"/>
+                    <_DitIndexForToolkit val="9"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -2309,7 +2310,7 @@
                   <CallTask FlowIsn="31">
                     <OperationType val="P"/>
                     <Event>
-                      <EventType val="U"/>
+                      <EventType val="N"/>
                       <PublicObject comp="-1"/>
                     </Event>
                     <TaskID comp="-1" obj="48"/>
@@ -2351,7 +2352,7 @@
                   <CallTask FlowIsn="32">
                     <OperationType val="P"/>
                     <Event>
-                      <EventType val="U"/>
+                      <EventType val="N"/>
                       <PublicObject comp="-1"/>
                     </Event>
                     <TaskID comp="-1" obj="47"/>
@@ -2410,7 +2411,7 @@
                   <X id="21" val="185"/>
                   <Y id="22" val="83"/>
                   <Width id="23" val="26"/>
-                  <Height id="24" val="22"/>
+                  <Height id="24" val="20"/>
                   <ControlName id="46" val="SelectEventB"/>
                   <Format id="82" valUnicode="..."/>
                   <RaiseEvent id="234">
@@ -2479,21 +2480,6 @@
                   <Font id="50" val="1"/>
                 </PropertyList>
               </Control>
-              <Control ISN_FATHER="15" PDOD="128" _test_id="18" id="18">
-                <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                  <X id="21" val="185"/>
-                  <Y id="22" val="128"/>
-                  <Width id="23" val="26"/>
-                  <Height id="24" val="22"/>
-                  <ControlName id="46" val="SelectVenueB"/>
-                  <Format id="82" valUnicode="..."/>
-                  <RaiseEvent id="234">
-                    <EventType val="U"/>
-                    <Parent val="1"/>
-                    <PublicObject comp="-1" obj="2"/>
-                  </RaiseEvent>
-                </PropertyList>
-              </Control>
               <Control ISN_FATHER="15" _test_id="3" id="3">
                 <PropertyList model="CTRL_WEB_CLIENT_EDIT">
                   <Model ID="MODEL_WEB_CLIENT" id="1">
@@ -2505,6 +2491,21 @@
                   <Height id="24" val="20"/>
                   <Data FieldID="9" id="43"/>
                   <ControlName id="46" val="VenueID"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="15" PDOD="128" _test_id="18" id="18">
+                <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                  <X id="21" val="185"/>
+                  <Y id="22" val="131"/>
+                  <Width id="23" val="26"/>
+                  <Height id="24" val="20"/>
+                  <ControlName id="46" val="SelectVenueB"/>
+                  <Format id="82" valUnicode="..."/>
+                  <RaiseEvent id="234">
+                    <EventType val="U"/>
+                    <Parent val="1"/>
+                    <PublicObject comp="-1" obj="2"/>
+                  </RaiseEvent>
                 </PropertyList>
               </Control>
               <Control ISN_FATHER="15" PDOD="1" _test_id="9" id="9">

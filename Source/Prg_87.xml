@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736877" _time="66752" date="02/07/2018" time="18:32:32"/>
+          <LastModified _date="736877" _time="68145" date="02/07/2018" time="18:55:45"/>
         </Header>
         <ItemIsn val="38"/>
         <Resource>
@@ -359,6 +359,7 @@
             </Event>
             <TXT val="Enq_BookingNo"/>
             <Expanded val="1"/>
+            <Disabled val="1"/>
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
@@ -370,16 +371,11 @@
                   </Event>
                   <TaskID comp="-1" obj="50"/>
                   <Lock val="N"/>
-                  <Arguments>
-                    <Argument>
-                      <Variable val="1"/>
-                      <Skip val="N"/>
-                    </Argument>
-                  </Arguments>
                   <Wait val="Y"/>
                   <SyncData val="N"/>
                   <IsRoute val="N"/>
                   <RetainFocus val="N"/>
+                  <Disabled val="1"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -1021,7 +1017,7 @@
             <External val="N"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="736877" _time="66356" date="02/07/2018" time="18:25:56"/>
+            <LastModified _date="736877" _time="68130" date="02/07/2018" time="18:55:30"/>
           </Header>
           <ItemIsn val="27"/>
           <Resource>
@@ -1620,7 +1616,7 @@
                   <X id="21" val="13"/>
                   <Y id="22" val="36"/>
                   <Width id="23" val="496"/>
-                  <Height id="24" val="224"/>
+                  <Height id="24" val="173"/>
                   <ControlName id="46" val="Group1"/>
                 </PropertyList>
               </Control>
@@ -1744,10 +1740,10 @@
                   <ControlName id="46" val="TotalGuest"/>
                 </PropertyList>
               </Control>
-              <Control ISN_FATHER="1" PDOD="128" _test_id="14" id="14">
+              <Control PDOD="128" _test_id="14" id="14">
                 <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                  <X id="21" val="214"/>
-                  <Y id="22" val="195"/>
+                  <X id="21" val="190"/>
+                  <Y id="22" val="239"/>
                   <Width id="23" val="111"/>
                   <Height id="24" val="27"/>
                   <ControlName id="46" val="AddCustomerB"/>
@@ -1822,7 +1818,7 @@
             <External val="N"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="736877" _time="66711" date="02/07/2018" time="18:31:51"/>
+            <LastModified _date="736877" _time="68145" date="02/07/2018" time="18:55:45"/>
           </Header>
           <ItemIsn val="17"/>
           <Resource>
@@ -2285,6 +2281,96 @@
                     <Direction val="C"/>
                   </STP>
                 </LogicLine>
+                <LogicLine>
+                  <Remark FlowIsn="30">
+                    <Type val="2"/>
+                    <Text val=" "/>
+                  </Remark>
+                </LogicLine>
+              </LogicLines>
+            </LogicUnit>
+            <LogicUnit id="9" propagate="78">
+              <Level val="H"/>
+              <Type val="U"/>
+              <Scope val="T"/>
+              <EngineDirective val="S"/>
+              <ShowMessage val="Y"/>
+              <Condition val="89"/>
+              <Event>
+                <EventType val="U"/>
+                <Parent val="1"/>
+                <PublicObject comp="-1" obj="3"/>
+              </Event>
+              <TXT val="SelectEventB"/>
+              <Expanded val="1"/>
+              <ExecuteOn_ val="O"/>
+              <LogicLines>
+                <LogicLine>
+                  <CallTask FlowIsn="31">
+                    <OperationType val="P"/>
+                    <Event>
+                      <EventType val="U"/>
+                      <PublicObject comp="-1"/>
+                    </Event>
+                    <TaskID comp="-1" obj="48"/>
+                    <Lock val="N"/>
+                    <Arguments>
+                      <Argument>
+                        <Variable val="8"/>
+                        <Skip val="N"/>
+                      </Argument>
+                    </Arguments>
+                    <Wait val="Y"/>
+                    <SyncData val="N"/>
+                    <IsRoute val="N"/>
+                    <RetainFocus val="N"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </CallTask>
+                </LogicLine>
+              </LogicLines>
+            </LogicUnit>
+            <LogicUnit id="10" propagate="78">
+              <Level val="H"/>
+              <Type val="U"/>
+              <Scope val="T"/>
+              <EngineDirective val="S"/>
+              <ShowMessage val="Y"/>
+              <Condition val="89"/>
+              <Event>
+                <EventType val="U"/>
+                <Parent val="1"/>
+                <PublicObject comp="-1" obj="2"/>
+              </Event>
+              <TXT val="SelectVenueB"/>
+              <Expanded val="1"/>
+              <ExecuteOn_ val="O"/>
+              <LogicLines>
+                <LogicLine>
+                  <CallTask FlowIsn="32">
+                    <OperationType val="P"/>
+                    <Event>
+                      <EventType val="U"/>
+                      <PublicObject comp="-1"/>
+                    </Event>
+                    <TaskID comp="-1" obj="47"/>
+                    <Lock val="N"/>
+                    <Arguments>
+                      <Argument>
+                        <Variable val="9"/>
+                        <Skip val="N"/>
+                      </Argument>
+                    </Arguments>
+                    <Wait val="Y"/>
+                    <SyncData val="N"/>
+                    <IsRoute val="N"/>
+                    <RetainFocus val="N"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </CallTask>
+                </LogicLine>
               </LogicLines>
             </LogicUnit>
           </TaskLogic>
@@ -2302,7 +2388,7 @@
                   <X id="21" val="28"/>
                   <Y id="22" val="43"/>
                   <Width id="23" val="514"/>
-                  <Height id="24" val="288"/>
+                  <Height id="24" val="195"/>
                   <ControlName id="46" val="Group15"/>
                 </PropertyList>
               </Control>
@@ -2327,6 +2413,11 @@
                   <Height id="24" val="22"/>
                   <ControlName id="46" val="SelectEventB"/>
                   <Format id="82" valUnicode="..."/>
+                  <RaiseEvent id="234">
+                    <EventType val="U"/>
+                    <Parent val="1"/>
+                    <PublicObject comp="-1" obj="3"/>
+                  </RaiseEvent>
                 </PropertyList>
               </Control>
               <Control ISN_FATHER="15" PDOD="128" _test_id="5" id="5">
@@ -2396,6 +2487,11 @@
                   <Height id="24" val="22"/>
                   <ControlName id="46" val="SelectVenueB"/>
                   <Format id="82" valUnicode="..."/>
+                  <RaiseEvent id="234">
+                    <EventType val="U"/>
+                    <Parent val="1"/>
+                    <PublicObject comp="-1" obj="2"/>
+                  </RaiseEvent>
                 </PropertyList>
               </Control>
               <Control ISN_FATHER="15" _test_id="3" id="3">
@@ -2494,12 +2590,13 @@
                   <Font id="50" val="1"/>
                 </PropertyList>
               </Control>
-              <Control ISN_FATHER="15" PDOD="128" _test_id="16" id="16">
+              <Control PDOD="128" _test_id="16" id="16">
                 <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                  <X id="21" val="236"/>
-                  <Y id="22" val="255"/>
+                  <X id="21" val="212"/>
+                  <Y id="22" val="258"/>
                   <Width id="23" val="111"/>
                   <Height id="24" val="38"/>
+                  <Data FieldID="19" Parent="1" id="43"/>
                   <ControlName id="46" val="AvailabilityB"/>
                   <Format id="82" valUnicode="Availability"/>
                 </PropertyList>

@@ -30,7 +30,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736865" _time="64434" date="20/06/2018" time="17:53:54"/>
+          <LastModified _date="736877" _time="65716" date="02/07/2018" time="18:15:16"/>
         </Header>
         <ItemIsn val="16"/>
         <Resource>
@@ -184,7 +184,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="8"/>
+                  <_DitIndexForToolkit val="6"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -197,7 +197,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="9"/>
+                  <_DitIndexForToolkit val="7"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -210,7 +210,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="6"/>
+                  <_DitIndexForToolkit val="9"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -223,7 +223,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="12"/>
+                  <_DitIndexForToolkit val="11"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -236,7 +236,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="14"/>
+                  <_DitIndexForToolkit val="12"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -249,7 +249,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="16"/>
+                  <_DitIndexForToolkit val="14"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -484,10 +484,10 @@
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="20" _last_test_id="20" id="1">
+          <FormEntry _last_isn="26" _last_test_id="26" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
-              <Width id="23" val="611"/>
-              <Height id="24" val="701"/>
+              <Width id="23" val="973"/>
+              <Height id="24" val="903"/>
               <FormUnits id="33" val="4"/>
               <_Comment id="218"/>
               <FormName id="311" valUnicode="Supplier"/>
@@ -497,8 +497,8 @@
                 <Text id="19" valUnicode="SupplierID:"/>
                 <X id="21" val="5"/>
                 <Y id="22" val="13"/>
-                <Width id="23" val="99"/>
-                <Height id="24" val="15"/>
+                <Width id="23" val="57"/>
+                <Height id="24" val="20"/>
                 <ControlName id="46" val="Label3"/>
               </PropertyList>
             </Control>
@@ -507,9 +507,9 @@
                 <Model ID="MODEL_RICH_CLIENT" id="1">
                   <Var FieldID="1"/>
                 </Model>
-                <X id="21" val="121"/>
+                <X id="21" val="171"/>
                 <Y id="22" val="13"/>
-                <Width id="23" val="76"/>
+                <Width id="23" val="146"/>
                 <Height id="24" val="20"/>
                 <Data FieldID="1" id="43"/>
                 <ControlName id="46" val="SupplierID"/>
@@ -519,10 +519,10 @@
             <Control _test_id="5" id="5">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
                 <Text id="19" valUnicode="SupplierName:"/>
-                <X id="21" val="5"/>
-                <Y id="22" val="46"/>
-                <Width id="23" val="116"/>
-                <Height id="24" val="15"/>
+                <X id="21" val="3"/>
+                <Y id="22" val="59"/>
+                <Width id="23" val="72"/>
+                <Height id="24" val="20"/>
                 <ControlName id="46" val="Label5"/>
               </PropertyList>
             </Control>
@@ -531,44 +531,21 @@
                 <Model ID="MODEL_RICH_CLIENT" id="1">
                   <Var FieldID="2"/>
                 </Model>
-                <X id="21" val="123"/>
-                <Y id="22" val="46"/>
-                <Width id="23" val="141"/>
+                <X id="21" val="171"/>
+                <Y id="22" val="59"/>
+                <Width id="23" val="146"/>
                 <Height id="24" val="20"/>
                 <Data FieldID="2" id="43"/>
                 <ControlName id="46" val="SupplierName"/>
               </PropertyList>
             </Control>
-            <Control _test_id="1" id="1">
-              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                <Text id="19" valUnicode="City:"/>
-                <X id="21" val="5"/>
-                <Y id="22" val="85"/>
-                <Width id="23" val="68"/>
-                <Height id="24" val="15"/>
-                <ControlName id="46" val="Label1"/>
-              </PropertyList>
-            </Control>
-            <Control _test_id="2" id="2">
-              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
-                <Model ID="MODEL_RICH_CLIENT" id="1">
-                  <Var FieldID="5"/>
-                </Model>
-                <X id="21" val="121"/>
-                <Y id="22" val="85"/>
-                <Width id="23" val="146"/>
-                <Height id="24" val="20"/>
-                <Data FieldID="5" id="43"/>
-                <ControlName id="46" val="City"/>
-              </PropertyList>
-            </Control>
             <Control _test_id="9" id="9">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                <Text id="19" valUnicode="Address1:"/>
+                <Text id="19" valUnicode="Address:"/>
                 <X id="21" val="5"/>
-                <Y id="22" val="126"/>
-                <Width id="23" val="94"/>
-                <Height id="24" val="15"/>
+                <Y id="22" val="100"/>
+                <Width id="23" val="52"/>
+                <Height id="24" val="20"/>
                 <ControlName id="46" val="Label9"/>
               </PropertyList>
             </Control>
@@ -577,10 +554,10 @@
                 <Model ID="MODEL_RICH_CLIENT" id="1">
                   <Var FieldID="3"/>
                 </Model>
-                <X id="21" val="121"/>
-                <Y id="22" val="126"/>
-                <Width id="23" val="151"/>
-                <Height id="24" val="39"/>
+                <X id="21" val="171"/>
+                <Y id="22" val="100"/>
+                <Width id="23" val="300"/>
+                <Height id="24" val="20"/>
                 <Data FieldID="3" id="43"/>
                 <ControlName id="46" val="Address1"/>
               </PropertyList>
@@ -590,30 +567,45 @@
                 <Model ID="MODEL_RICH_CLIENT" id="1">
                   <Var FieldID="4"/>
                 </Model>
-                <X id="21" val="116"/>
-                <Y id="22" val="183"/>
-                <Width id="23" val="151"/>
-                <Height id="24" val="41"/>
+                <X id="21" val="171"/>
+                <Y id="22" val="141"/>
+                <Width id="23" val="300"/>
+                <Height id="24" val="25"/>
                 <Data FieldID="4" id="43"/>
                 <ControlName id="46" val="Address2"/>
               </PropertyList>
             </Control>
-            <Control _test_id="14" id="14">
+            <Control _test_id="26" id="26">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                <Text id="19" valUnicode="Address2:"/>
-                <X id="21" val="5"/>
-                <Y id="22" val="198"/>
-                <Width id="23" val="94"/>
+                <Text id="19" valUnicode="City"/>
+                <X id="21" val="6"/>
+                <Y id="22" val="172"/>
+                <Width id="23" val="19"/>
                 <Height id="24" val="15"/>
-                <ControlName id="46" val="Label14"/>
+                <ControlName id="46" val="Label26"/>
+                <Font id="50" val="1"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="25" id="25">
+              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                <Model ID="MODEL_WEB_CLIENT" id="1">
+                  <Var FieldID="5"/>
+                </Model>
+                <X id="21" val="171"/>
+                <Y id="22" val="183"/>
+                <Width id="23" val="356"/>
+                <Height id="24" val="20"/>
+                <Data FieldID="5" id="43"/>
+                <ControlName id="46" val="City"/>
               </PropertyList>
             </Control>
             <Control _test_id="7" id="7">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                <Text id="19" valUnicode="Contact1:"/>
-                <Y id="22" val="240"/>
-                <Width id="23" val="93"/>
-                <Height id="24" val="15"/>
+                <Text id="19" valUnicode="Contact"/>
+                <X id="21" val="5"/>
+                <Y id="22" val="247"/>
+                <Width id="23" val="50"/>
+                <Height id="24" val="20"/>
                 <ControlName id="46" val="Label7"/>
               </PropertyList>
             </Control>
@@ -622,21 +614,12 @@
                 <Model ID="MODEL_RICH_CLIENT" id="1">
                   <Var FieldID="6"/>
                 </Model>
-                <X id="21" val="116"/>
-                <Y id="22" val="240"/>
-                <Width id="23" val="148"/>
+                <X id="21" val="171"/>
+                <Y id="22" val="247"/>
+                <Width id="23" val="218"/>
                 <Height id="24" val="20"/>
                 <Data FieldID="6" id="43"/>
                 <ControlName id="46" val="Contact1"/>
-              </PropertyList>
-            </Control>
-            <Control _test_id="11" id="11">
-              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                <Text id="19" valUnicode="Contact2:"/>
-                <Y id="22" val="283"/>
-                <Width id="23" val="93"/>
-                <Height id="24" val="15"/>
-                <ControlName id="46" val="Label11"/>
               </PropertyList>
             </Control>
             <Control _test_id="12" id="12">
@@ -644,9 +627,9 @@
                 <Model ID="MODEL_RICH_CLIENT" id="1">
                   <Var FieldID="7"/>
                 </Model>
-                <X id="21" val="116"/>
-                <Y id="22" val="283"/>
-                <Width id="23" val="148"/>
+                <X id="21" val="429"/>
+                <Y id="22" val="247"/>
+                <Width id="23" val="146"/>
                 <Height id="24" val="20"/>
                 <Data FieldID="7" id="43"/>
                 <ControlName id="46" val="Contact2"/>
@@ -655,9 +638,9 @@
             <Control _test_id="15" id="15">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
                 <Text id="19" valUnicode="Email:"/>
-                <Y id="22" val="331"/>
-                <Width id="23" val="75"/>
-                <Height id="24" val="15"/>
+                <Y id="22" val="312"/>
+                <Width id="23" val="38"/>
+                <Height id="24" val="20"/>
                 <ControlName id="46" val="Label15"/>
               </PropertyList>
             </Control>
@@ -666,61 +649,18 @@
                 <Model ID="MODEL_RICH_CLIENT" id="1">
                   <Var FieldID="8"/>
                 </Model>
-                <X id="21" val="116"/>
-                <Y id="22" val="331"/>
-                <Width id="23" val="146"/>
+                <X id="21" val="171"/>
+                <Y id="22" val="312"/>
+                <Width id="23" val="251"/>
                 <Height id="24" val="20"/>
                 <Data FieldID="8" id="43"/>
                 <ControlName id="46" val="Email"/>
               </PropertyList>
             </Control>
-            <Control PDOD="128" _test_id="17" id="17">
-              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <Model comp="-1" id="1" obj="25"/>
-                <X id="21" val="5"/>
-                <Y id="22" val="371"/>
-                <Width id="23" val="93"/>
-                <Height id="24" val="29"/>
-                <ControlName id="46" val="Button17"/>
-                <RaiseEvent id="234">
-                  <EventType val="U"/>
-                  <PublicObject comp="-1" obj="1"/>
-                </RaiseEvent>
-              </PropertyList>
-            </Control>
-            <Control PDOD="128" _test_id="18" id="18">
-              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="104"/>
-                <Y id="22" val="371"/>
-                <Width id="23" val="103"/>
-                <Height id="24" val="29"/>
-                <ControlName id="46" val="Button18"/>
-                <Format id="82" valUnicode="&amp;Modify"/>
-                <RaiseEvent id="234">
-                  <EventType val="U"/>
-                  <PublicObject comp="-1" obj="2"/>
-                </RaiseEvent>
-              </PropertyList>
-            </Control>
-            <Control PDOD="128" _test_id="19" id="19">
-              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <Model comp="-1" id="1" obj="27"/>
-                <X id="21" val="213"/>
-                <Y id="22" val="371"/>
-                <Width id="23" val="93"/>
-                <Height id="24" val="29"/>
-                <ControlName id="46" val="&amp;Delete"/>
-                <Format id="82" valUnicode="Delete"/>
-                <RaiseEvent id="234">
-                  <EventType val="I"/>
-                  <InternalEventID val="36"/>
-                  <PublicObject comp="-1"/>
-                </RaiseEvent>
-              </PropertyList>
-            </Control>
             <Control PDOD="128" _test_id="20" id="20">
               <PropertyList model="CTRL_WEB_CLIENT_SUBFORM">
-                <Y id="22" val="406"/>
+                <X id="21" val="12"/>
+                <Y id="22" val="527"/>
                 <Width id="23" val="604"/>
                 <Height id="24" val="284"/>
                 <ControlName id="46" val="SupplierDetails"/>
@@ -734,6 +674,80 @@
                 </Arguments>
                 <ConnectTo id="156" val="2"/>
                 <TaskNumber comp="-1" id="183" obj="2"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="128" _test_id="17" id="17">
+              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                <Model comp="-1" id="1" obj="25"/>
+                <X id="21" val="3"/>
+                <Y id="22" val="833"/>
+                <Width id="23" val="93"/>
+                <Height id="24" val="29"/>
+                <ControlName id="46" val="Button17"/>
+                <RaiseEvent id="234">
+                  <EventType val="U"/>
+                  <PublicObject comp="-1" obj="1"/>
+                </RaiseEvent>
+              </PropertyList>
+            </Control>
+            <Control PDOD="128" _test_id="18" id="18">
+              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                <X id="21" val="102"/>
+                <Y id="22" val="833"/>
+                <Width id="23" val="103"/>
+                <Height id="24" val="29"/>
+                <ControlName id="46" val="Button18"/>
+                <Format id="82" valUnicode="&amp;Modify"/>
+                <RaiseEvent id="234">
+                  <EventType val="U"/>
+                  <PublicObject comp="-1" obj="2"/>
+                </RaiseEvent>
+              </PropertyList>
+            </Control>
+            <Control PDOD="128" _test_id="19" id="19">
+              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                <Model comp="-1" id="1" obj="27"/>
+                <X id="21" val="211"/>
+                <Y id="22" val="833"/>
+                <Width id="23" val="93"/>
+                <Height id="24" val="29"/>
+                <ControlName id="46" val="&amp;Delete"/>
+                <Format id="82" valUnicode="Delete"/>
+                <RaiseEvent id="234">
+                  <EventType val="I"/>
+                  <InternalEventID val="36"/>
+                  <PublicObject comp="-1"/>
+                </RaiseEvent>
+              </PropertyList>
+            </Control>
+            <Control PDOD="128" _test_id="21" id="21">
+              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                <X id="21" val="310"/>
+                <Y id="22" val="833"/>
+                <Width id="23" val="96"/>
+                <Height id="24" val="29"/>
+                <ControlName id="46" val="Button21"/>
+                <Format id="82" valUnicode="Next"/>
+                <RaiseEvent id="234">
+                  <EventType val="I"/>
+                  <InternalEventID val="65"/>
+                  <PublicObject comp="-1"/>
+                </RaiseEvent>
+              </PropertyList>
+            </Control>
+            <Control PDOD="128" _test_id="22" id="22">
+              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                <X id="21" val="412"/>
+                <Y id="22" val="833"/>
+                <Width id="23" val="96"/>
+                <Height id="24" val="29"/>
+                <ControlName id="46" val="Button22"/>
+                <Format id="82" valUnicode="Previous"/>
+                <RaiseEvent id="234">
+                  <EventType val="I"/>
+                  <InternalEventID val="64"/>
+                  <PublicObject comp="-1"/>
+                </RaiseEvent>
               </PropertyList>
             </Control>
           </FormEntry>
@@ -851,7 +865,7 @@
             <External val="N"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="736860" _time="61902" date="15/06/2018" time="17:11:42"/>
+            <LastModified _date="736877" _time="65716" date="02/07/2018" time="18:15:16"/>
           </Header>
           <ItemIsn val="5"/>
           <Resource>
@@ -962,7 +976,6 @@
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <Range MAX="2" MIN="2"/>
-                    <_DitIndexForToolkit val="2"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -975,7 +988,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="3"/>
+                    <_DitIndexForToolkit val="4"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -988,7 +1001,7 @@
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="4"/>
+                    <_DitIndexForToolkit val="5"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -1144,24 +1157,24 @@
                   <ControlName id="46" val="Table1"/>
                   <TitleHeight id="79" val="20"/>
                   <RowHeight id="80" val="24"/>
-                  <Elements id="81" val="3"/>
+                  <Elements id="81" val="2"/>
                   <_WindowWidth id="241" val="284"/>
                 </PropertyList>
               </Control>
-              <Control ISN_FATHER="1" _test_id="5" id="5">
-                <PropertyList model="CTRL_WEB_CLIENT_EDIT">
-                  <Model ID="MODEL_RICH_CLIENT_TBL" id="1">
-                    <Var FieldID="1"/>
-                  </Model>
-                  <X id="21" val="15"/>
-                  <Y id="22" val="37"/>
-                  <Width id="23" val="76"/>
-                  <Height id="24" val="20"/>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="3" id="3">
+                <PropertyList model="CTRL_WEB_CLIENT_COLUMN">
+                  <Width id="23" val="85"/>
                   <ControlLayer id="25" val="1"/>
-                  <Data FieldID="1" id="43"/>
-                  <ControlName id="46" val="SupplierID"/>
-                  <TabOrder id="314" val="1"/>
-                  <Border id="452"/>
+                  <ControlName id="46" val="Column3"/>
+                  <ColumnTitle id="139" valUnicode="ServiceID"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="4" id="4">
+                <PropertyList model="CTRL_WEB_CLIENT_COLUMN">
+                  <Width id="23" val="93"/>
+                  <ControlLayer id="25" val="2"/>
+                  <ControlName id="46" val="Column4"/>
+                  <ColumnTitle id="139" valUnicode="Cost"/>
                 </PropertyList>
               </Control>
               <Control ISN_FATHER="1" _test_id="6" id="6">
@@ -1169,14 +1182,13 @@
                   <Model ID="MODEL_RICH_CLIENT_TBL" id="1">
                     <Var FieldID="2"/>
                   </Model>
-                  <X id="21" val="100"/>
+                  <X id="21" val="15"/>
                   <Y id="22" val="37"/>
                   <Width id="23" val="76"/>
                   <Height id="24" val="20"/>
-                  <ControlLayer id="25" val="2"/>
+                  <ControlLayer id="25" val="1"/>
                   <Data FieldID="2" id="43"/>
                   <ControlName id="46" val="ServiceID"/>
-                  <TabOrder id="314" val="2"/>
                   <Border id="452"/>
                 </PropertyList>
               </Control>
@@ -1185,40 +1197,14 @@
                   <Model ID="MODEL_RICH_CLIENT_TBL" id="1">
                     <Var FieldID="3"/>
                   </Model>
-                  <X id="21" val="185"/>
+                  <X id="21" val="100"/>
                   <Y id="22" val="37"/>
                   <Width id="23" val="84"/>
                   <Height id="24" val="20"/>
-                  <ControlLayer id="25" val="3"/>
+                  <ControlLayer id="25" val="2"/>
                   <Data FieldID="3" id="43"/>
                   <ControlName id="46" val="Cost"/>
-                  <TabOrder id="314" val="3"/>
                   <Border id="452"/>
-                </PropertyList>
-              </Control>
-              <Control ISN_FATHER="1" PDOD="128" _test_id="2" id="2">
-                <PropertyList model="CTRL_WEB_CLIENT_COLUMN">
-                  <Width id="23" val="85"/>
-                  <ControlLayer id="25" val="1"/>
-                  <ControlName id="46" val="Column2"/>
-                  <Sortable id="134" val="Y"/>
-                  <ColumnTitle id="139" valUnicode="SupplierID"/>
-                </PropertyList>
-              </Control>
-              <Control ISN_FATHER="1" PDOD="128" _test_id="3" id="3">
-                <PropertyList model="CTRL_WEB_CLIENT_COLUMN">
-                  <Width id="23" val="85"/>
-                  <ControlLayer id="25" val="2"/>
-                  <ControlName id="46" val="Column3"/>
-                  <ColumnTitle id="139" valUnicode="ServiceID"/>
-                </PropertyList>
-              </Control>
-              <Control ISN_FATHER="1" PDOD="128" _test_id="4" id="4">
-                <PropertyList model="CTRL_WEB_CLIENT_COLUMN">
-                  <Width id="23" val="93"/>
-                  <ControlLayer id="25" val="3"/>
-                  <ControlName id="46" val="Column4"/>
-                  <ColumnTitle id="139" valUnicode="Cost"/>
                 </PropertyList>
               </Control>
             </FormEntry>
